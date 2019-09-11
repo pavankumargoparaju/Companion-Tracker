@@ -1,0 +1,297 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="S,[X[Z_#2Y{uf?T#Ut_W" x="-710" y="-470">
+    <mutation component_type="Form" is_generic="false" instance_name="Search_Room" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Search_Room</field>
+    <statement name="DO">
+      <block type="component_method" id="Oz|(kEc43Z!6!gcK/Ech">
+        <mutation component_type="ColinTreeListView" method_name="Initialize_Scroll" is_generic="false" instance_name="ColinTreeListView1"></mutation>
+        <field name="COMPONENT_SELECTOR">ColinTreeListView1</field>
+        <value name="ARG0">
+          <block type="component_component_block" id="_%TAA~x_kx1[lI)`#klh">
+            <mutation component_type="VerticalScrollArrangement" instance_name="Vertical_Scroll_Arrangement1"></mutation>
+            <field name="COMPONENT_SELECTOR">Vertical_Scroll_Arrangement1</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="f7{_s5KP6)JTqB2g%%$k">
+            <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+            <field name="PROP">ProjectBucket</field>
+            <value name="VALUE">
+              <block type="text" id="{9L{s}5WxH0Zpge1dc.M">
+                <field name="TEXT">Rooms</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="!:u=GFM]31=`=~2i7:Ge">
+                <mutation component_type="FirebaseDB" method_name="GetTagList" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="%;oE{!I0,g._A.k;uL=I" x="-710" y="-310">
+    <mutation component_type="FirebaseDB" is_generic="false" instance_name="Firebase_Database1" event_name="TagList"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+    <statement name="DO">
+      <block type="controls_forEach" id="u5G=]`6.4[FG@u8Xs6]Z">
+        <field name="VAR">item</field>
+        <value name="LIST">
+          <block type="lexical_variable_get" id="vst%1dnOx^.zjb*T(nIZ">
+            <mutation>
+              <eventparam name="value"></eventparam>
+            </mutation>
+            <field name="VAR">value</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="component_method" id="T%8O8h}Vs[*}TUF`51~y">
+            <mutation component_type="FirebaseDB" method_name="GetValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+            <value name="ARG0">
+              <block type="lexical_variable_get" id="{4SJfjtZJ,Lx!crP%-SH">
+                <field name="VAR">item</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="D[eo]vnG:Mpdk$1SRJ77">
+                <field name="TEXT"></field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="I_Ya4Zh@EL!A`L_Kf_*~" x="-210" y="-310">
+    <field name="NAME">house_images</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="r4,o4TEzxQUo0?oISkB_">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id=",.|}x|l)w^{X6eI#$HCR" x="-210" y="-270">
+    <field name="NAME">house_desc</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="Vif+nElM4opK{^~]AygT">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="J5O{~)`M3jS0HPM2Af}d" x="-210" y="-230">
+    <field name="NAME">house_budget</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="T3~:K0o*Kvj#FzHkD2/.">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="Ns3?{teN2AEJ@*HG(1W~" x="-210" y="-190">
+    <field name="NAME">UIDs</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="qeRa0sX{Yx/qWl%P{qY?">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="$@Ept#[ufxCqX`N.VI;f" x="-710" y="-110">
+    <mutation component_type="FirebaseDB" is_generic="false" instance_name="Firebase_Database1" event_name="GotValue"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+    <statement name="DO">
+      <block type="lists_add_items" id="!Xz#{{ZB06|[MF[dwbiP">
+        <mutation items="1"></mutation>
+        <value name="LIST">
+          <block type="lexical_variable_get" id="@Q6rl+f;a-o1q(4Yq3ot">
+            <field name="VAR">global UIDs</field>
+          </block>
+        </value>
+        <value name="ITEM0">
+          <block type="lexical_variable_get" id="#^^1H5:,}9B#o[Yd]vnG">
+            <mutation>
+              <eventparam name="tag"></eventparam>
+            </mutation>
+            <field name="VAR">tag</field>
+          </block>
+        </value>
+        <next>
+          <block type="lists_add_items" id="91r^D%$}r#cF*Y7cY~b*">
+            <mutation items="1"></mutation>
+            <value name="LIST">
+              <block type="lexical_variable_get" id="S4ek$bt7^/0=8zrjI6#[">
+                <field name="VAR">global house_images</field>
+              </block>
+            </value>
+            <value name="ITEM0">
+              <block type="lists_select_item" id="Q,WBBhkAtw((72joeSHt">
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="=CYP$E$n7EytcX_DLm/Y">
+                    <mutation>
+                      <eventparam name="value"></eventparam>
+                    </mutation>
+                    <field name="VAR">value</field>
+                  </block>
+                </value>
+                <value name="NUM">
+                  <block type="math_number" id="@8b`Kc~yA~O@=/H{cGG/">
+                    <field name="NUM">4</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="lists_add_items" id="FdU+G~VKy(^gU~+YyxaH">
+                <mutation items="1"></mutation>
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="3:sCMr@JrDTW`[|8J%8B">
+                    <field name="VAR">global house_desc</field>
+                  </block>
+                </value>
+                <value name="ITEM0">
+                  <block type="lists_select_item" id="wOxh}V)gdv3XQ6JT|-[l">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="5A`_|hZ+^0=zZDzUM,^[">
+                        <mutation>
+                          <eventparam name="value"></eventparam>
+                        </mutation>
+                        <field name="VAR">value</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="math_number" id="`}o}#I!J(oZR3qpo;*t:">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="lists_add_items" id="#[rAai~U|TIy?9eAYKyK">
+                    <mutation items="1"></mutation>
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="@H1n]WXbu7hec]aC-JHV">
+                        <field name="VAR">global house_budget</field>
+                      </block>
+                    </value>
+                    <value name="ITEM0">
+                      <block type="lists_select_item" id="EIiD8.]CpC:FAfEUv_?R">
+                        <value name="LIST">
+                          <block type="lexical_variable_get" id="nrs)pO7slGV/)hFg?]FC">
+                            <mutation>
+                              <eventparam name="value"></eventparam>
+                            </mutation>
+                            <field name="VAR">value</field>
+                          </block>
+                        </value>
+                        <value name="NUM">
+                          <block type="math_number" id=":=j?rDk)3BQ@W:$0_(q:">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="hFJ@(K5?C$`*Vxs%5,)O">
+                        <mutation component_type="ColinTreeListView" method_name="AddElement" is_generic="false" instance_name="ColinTreeListView1"></mutation>
+                        <field name="COMPONENT_SELECTOR">ColinTreeListView1</field>
+                        <value name="ARG0">
+                          <block type="lists_create_with" id="S}~e9I%@4^w|5EQ4!5i=">
+                            <mutation items="3"></mutation>
+                            <value name="ADD0">
+                              <block type="lists_select_item" id="LWO~%vgr|?r^(XTHt7{9">
+                                <value name="LIST">
+                                  <block type="lexical_variable_get" id="T3oQ^W~p3BpRdEI2l@Ex">
+                                    <mutation>
+                                      <eventparam name="value"></eventparam>
+                                    </mutation>
+                                    <field name="VAR">value</field>
+                                  </block>
+                                </value>
+                                <value name="NUM">
+                                  <block type="math_number" id="EH|@M?c3bycm6-IU4@h`">
+                                    <field name="NUM">4</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="lists_select_item" id="um:X24l8NTQ/khRo7umG">
+                                <value name="LIST">
+                                  <block type="lexical_variable_get" id="539$47[U(o:-]+=vQTt/">
+                                    <mutation>
+                                      <eventparam name="value"></eventparam>
+                                    </mutation>
+                                    <field name="VAR">value</field>
+                                  </block>
+                                </value>
+                                <value name="NUM">
+                                  <block type="math_number" id="eY%ay65YpseX[p=3.`jt">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD2">
+                              <block type="lists_select_item" id="rwT_{a-c;G5Px?[swSz{">
+                                <value name="LIST">
+                                  <block type="lexical_variable_get" id="P%B1OVTLFP3GmP%dOBeg">
+                                    <mutation>
+                                      <eventparam name="value"></eventparam>
+                                    </mutation>
+                                    <field name="VAR">value</field>
+                                  </block>
+                                </value>
+                                <value name="NUM">
+                                  <block type="math_number" id="C~2E4;|bE6Wd_xn{YZVG">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="WCr)3/{!0;z@jQeJ%*MN" x="-150" y="-70">
+    <mutation component_type="ColinTreeListView" is_generic="false" instance_name="ColinTreeListView1" event_name="ExtraButtonClick"></mutation>
+    <field name="COMPONENT_SELECTOR">ColinTreeListView1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="|i]3Y4eKb=G?h!x7?}6S">
+        <value name="SCREENNAME">
+          <block type="text" id="rb`:pK:Xew[~9H]~Mx-o">
+            <field name="TEXT">ViewHome</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="lists_select_item" id="lt9xOPqhOM~M(J2O,y1U">
+            <value name="LIST">
+              <block type="lexical_variable_get" id="YZ%n`-{p4nFtS4aGS(6%">
+                <field name="VAR">global UIDs</field>
+              </block>
+            </value>
+            <value name="NUM">
+              <block type="lexical_variable_get" id="!iVM[,Z9@E_8D1_yBg^8">
+                <mutation>
+                  <eventparam name="elementIndex"></eventparam>
+                </mutation>
+                <field name="VAR">elementIndex</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="206" language-version="26"></yacodeblocks>
+</xml>

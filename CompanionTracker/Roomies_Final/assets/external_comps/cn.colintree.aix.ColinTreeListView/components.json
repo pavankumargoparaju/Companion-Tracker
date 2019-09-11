@@ -1,0 +1,2286 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "aiwebres/icon.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "AddElement",
+   "description": "Method for AddElement",
+   "params": [{
+    "name": "element",
+    "type": "list"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "AddEmptyElement",
+   "description": "Method for AddEmptyElement",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "Clear",
+   "description": "Method for Clear",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ClearAllCache",
+   "description": "Method for ClearAllCache",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "ClearCache",
+   "description": "Method for ClearCache",
+   "params": [{
+    "name": "path",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Get",
+   "description": "Method for Get",
+   "params": [],
+   "returnType": "list"
+  },
+  {
+   "deprecated": "true",
+   "name": "GetElement",
+   "description": "Method for GetElement",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }],
+   "returnType": "list"
+  },
+  {
+   "deprecated": "false",
+   "name": "Initialize",
+   "description": "Method for Initialize",
+   "params": [{
+    "name": "verticalArrangement",
+    "type": "component"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Initialize_Scroll",
+   "description": "Method for Initialize_Scroll",
+   "params": [{
+    "name": "verticalScrollArrangement",
+    "type": "component"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "RemoveElement",
+   "description": "Method for RemoveElement",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Set",
+   "description": "Method for Set",
+   "params": [{
+    "name": "list",
+    "type": "list"
+   }]
+  },
+  {
+   "deprecated": "true",
+   "name": "SetElement",
+   "description": "Method for SetElement",
+   "params": [
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "element",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "true",
+   "name": "SetElementIcon",
+   "description": "Method for SetElementIcon",
+   "params": [
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "path",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "true",
+   "name": "SetElementMainText",
+   "description": "Method for SetElementMainText",
+   "params": [
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "mainText",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "true",
+   "name": "SetElementSubText",
+   "description": "Method for SetElementSubText",
+   "params": [
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "subText",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "true",
+   "name": "SetElementText",
+   "description": "Method for SetElementText",
+   "params": [
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "text",
+     "type": "text"
+    }
+   ]
+  }
+ ],
+ "blockProperties": [
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "AsyncImageLoad",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "CacheImage",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ElementHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonBgColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonEnabled",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonImage",
+   "description": "",
+   "type": "text"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonPaddings",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonShape",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonText",
+   "description": "",
+   "type": "text"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonTextFontBold",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonTextFontSize",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonWidth",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconBgColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconMultiParams",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconPaddings",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconShape",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconTextColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconTextFontBold",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconTextFontSize",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconWidth",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "LastClickedElement",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "LastClickedExtraButton",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "LastClickedIcon",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "LastLongClickedElement",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ScrollBottomAfterAdd",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SubTextColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SubTextFontBold",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SubTextFontSize",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SubTextHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextFontBold",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextFontSize",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TouchDownColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "UnderlineColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "UnderlineWidth",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "WidthAfterIcon",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "WidthBeforeExtraButton",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "WidthBeforeIcon",
+   "description": "",
+   "type": "number"
+  }
+ ],
+ "helpUrl": "",
+ "type": "cn.colintree.aix.ColinTreeListView.ColinTreeListView",
+ "androidMinSdk": 7,
+ "version": "10",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "ColinTreeListView",
+ "helpString": "by ColinTree at http://aix.colintree.cn/en/extensions/ColinTreeListView",
+ "properties": [
+  {
+   "defaultValue": "False",
+   "name": "AsyncImageLoad",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "False",
+   "name": "CacheImage",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "57",
+   "name": "ElementHeight",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "&HFFCCCCCC",
+   "name": "ExtraButtonBgColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "False",
+   "name": "ExtraButtonEnabled",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "20",
+   "name": "ExtraButtonHeight",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "",
+   "name": "ExtraButtonImage",
+   "editorArgs": [],
+   "editorType": "asset"
+  },
+  {
+   "defaultValue": "0",
+   "name": "ExtraButtonPaddings",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "3",
+   "name": "ExtraButtonShape",
+   "editorArgs": [],
+   "editorType": "button_shape"
+  },
+  {
+   "defaultValue": "",
+   "name": "ExtraButtonText",
+   "editorArgs": [],
+   "editorType": "text"
+  },
+  {
+   "defaultValue": "False",
+   "name": "ExtraButtonTextFontBold",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "12",
+   "name": "ExtraButtonTextFontSize",
+   "editorArgs": [],
+   "editorType": "non_negative_float"
+  },
+  {
+   "defaultValue": "20",
+   "name": "ExtraButtonWidth",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "&H00000000",
+   "name": "IconBgColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "40",
+   "name": "IconHeight",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "False",
+   "name": "IconMultiParams",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "0",
+   "name": "IconPaddings",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "1",
+   "name": "IconShape",
+   "editorArgs": [],
+   "editorType": "button_shape"
+  },
+  {
+   "defaultValue": "&H00000000",
+   "name": "IconTextColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "True",
+   "name": "IconTextFontBold",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "24",
+   "name": "IconTextFontSize",
+   "editorArgs": [],
+   "editorType": "non_negative_float"
+  },
+  {
+   "defaultValue": "40",
+   "name": "IconWidth",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "False",
+   "name": "ScrollBottomAfterAdd",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "&HFFCCCCCC",
+   "name": "SubTextColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "False",
+   "name": "SubTextFontBold",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "12",
+   "name": "SubTextFontSize",
+   "editorArgs": [],
+   "editorType": "non_negative_float"
+  },
+  {
+   "defaultValue": "18",
+   "name": "SubTextHeight",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "&HFF000000",
+   "name": "TextColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "False",
+   "name": "TextFontBold",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "14",
+   "name": "TextFontSize",
+   "editorArgs": [],
+   "editorType": "non_negative_float"
+  },
+  {
+   "defaultValue": "18",
+   "name": "TextHeight",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "&H00000000",
+   "name": "TouchDownColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "&HFFCCCCCC",
+   "name": "UnderlineColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "1",
+   "name": "UnderlineWidth",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "5",
+   "name": "WidthAfterIcon",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "2",
+   "name": "WidthBeforeExtraButton",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "7",
+   "name": "WidthBeforeIcon",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  }
+ ],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "ElementClick",
+   "description": "Event for ElementClick",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ElementLongClick",
+   "description": "Event for ElementLongClick",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ElementTouchDown",
+   "description": "Event for ElementTouchDown",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ElementTouchUp",
+   "description": "Event for ElementTouchUp",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonClick",
+   "description": "Event for ExtraButtonClick",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonLongClick",
+   "description": "Event for ExtraButtonLongClick",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonTouchDown",
+   "description": "Event for ExtraButtonTouchDown",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonTouchUp",
+   "description": "Event for ExtraButtonTouchUp",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconClick",
+   "description": "Event for IconClick",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconLongClick",
+   "description": "Event for IconLongClick",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconTouchDown",
+   "description": "Event for IconTouchDown",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconTouchUp",
+   "description": "Event for IconTouchUp",
+   "params": [{
+    "name": "elementIndex",
+    "type": "number"
+   }]
+  }
+ ]
+},{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "aiwebres/elementIcon.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "ElementBackgroundColor",
+   "description": "Method for ElementBackgroundColor",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "ElementBackgroundColor_",
+   "description": "Method for ElementBackgroundColor_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "argb",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ElementHeight",
+   "description": "Method for ElementHeight",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "ElementHeight_",
+   "description": "Method for ElementHeight_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "height",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ElementValue",
+   "description": "Method for ElementValue",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "list"
+  },
+  {
+   "deprecated": "false",
+   "name": "ElementValue_",
+   "description": "Method for ElementValue_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "value",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonBackgroundColor",
+   "description": "Method for ExtraButtonBackgroundColor",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonBackgroundColor_",
+   "description": "Method for ExtraButtonBackgroundColor_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "argb",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonHeight",
+   "description": "Method for ExtraButtonHeight",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonHeight_",
+   "description": "Method for ExtraButtonHeight_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "height",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonShape",
+   "description": "Method for ExtraButtonShape",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonShape_",
+   "description": "Method for ExtraButtonShape_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "shape",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonText",
+   "description": "Method for ExtraButtonText",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonTextFontBold",
+   "description": "Method for ExtraButtonTextFontBold",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonTextFontBold_",
+   "description": "Method for ExtraButtonTextFontBold_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "bold",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonTextFontSize",
+   "description": "Method for ExtraButtonTextFontSize",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonTextFontSize_",
+   "description": "Method for ExtraButtonTextFontSize_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "size",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonText_",
+   "description": "Method for ExtraButtonText_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "text",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonWidth",
+   "description": "Method for ExtraButtonWidth",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "ExtraButtonWidth_",
+   "description": "Method for ExtraButtonWidth_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "width",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconBackgroundColor",
+   "description": "Method for IconBackgroundColor",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "IconBackgroundColor_",
+   "description": "Method for IconBackgroundColor_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "argb",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconHeight",
+   "description": "Method for IconHeight",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "IconHeight_",
+   "description": "Method for IconHeight_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "height",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconImage",
+   "description": "Method for IconImage",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "IconImage_",
+   "description": "Method for IconImage_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "value",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconShape",
+   "description": "Method for IconShape",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "IconShape_",
+   "description": "Method for IconShape_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "shape",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconTextColor",
+   "description": "Method for IconTextColor",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "IconTextColor_",
+   "description": "Method for IconTextColor_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "argb",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconTextFontBold",
+   "description": "Method for IconTextFontBold",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "IconTextFontBold_",
+   "description": "Method for IconTextFontBold_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "bold",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconTextFontSize",
+   "description": "Method for IconTextFontSize",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "IconTextFontSize_",
+   "description": "Method for IconTextFontSize_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "size",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "IconWidth",
+   "description": "Method for IconWidth",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "IconWidth_",
+   "description": "Method for IconWidth_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "width",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "LinkToElement",
+   "description": "Method for LinkToElement",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Size",
+   "description": "Method for Size",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "SubText",
+   "description": "Method for SubText",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "SubTextColor",
+   "description": "Method for SubTextColor",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "SubTextColor_",
+   "description": "Method for SubTextColor_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "argb",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SubTextFontBold",
+   "description": "Method for SubTextFontBold",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "SubTextFontBold_",
+   "description": "Method for SubTextFontBold_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "bold",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SubTextFontSize",
+   "description": "Method for SubTextFontSize",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "SubTextFontSize_",
+   "description": "Method for SubTextFontSize_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "size",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SubTextHeight",
+   "description": "Method for SubTextHeight",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "SubTextHeight_",
+   "description": "Method for SubTextHeight_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "height",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SubText_",
+   "description": "Method for SubText_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "subtext",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Text",
+   "description": "Method for Text",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "TextColor",
+   "description": "Method for TextColor",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "TextColor_",
+   "description": "Method for TextColor_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "argb",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "TextFontBold",
+   "description": "Method for TextFontBold",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "TextFontBold_",
+   "description": "Method for TextFontBold_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "bold",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "TextFontSize",
+   "description": "Method for TextFontSize",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "TextFontSize_",
+   "description": "Method for TextFontSize_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "size",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "TextHeight",
+   "description": "Method for TextHeight",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "TextHeight_",
+   "description": "Method for TextHeight_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "height",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Text_",
+   "description": "Method for Text_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "text",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "UnderlineColor",
+   "description": "Method for UnderlineColor",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "UnderlineColor_",
+   "description": "Method for UnderlineColor_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "argb",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "UnderlineWidth",
+   "description": "Method for UnderlineWidth",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "UnderlineWidth_",
+   "description": "Method for UnderlineWidth_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "lineWidth",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "UseGlobalProperties",
+   "description": "Method for UseGlobalProperties",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "UseGlobalProperties_",
+   "description": "Method for UseGlobalProperties_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "useGlobal",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WidthAfterIcon",
+   "description": "Method for WidthAfterIcon",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "WidthAfterIcon_",
+   "description": "Method for WidthAfterIcon_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "width",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WidthBeforeExtraButton",
+   "description": "Method for WidthBeforeExtraButton",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "WidthBeforeExtraButton_",
+   "description": "Method for WidthBeforeExtraButton_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "width",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "WidthBeforeIcon",
+   "description": "Method for WidthBeforeIcon",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    }
+   ],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "WidthBeforeIcon_",
+   "description": "Method for WidthBeforeIcon_",
+   "params": [
+    {
+     "name": "listview",
+     "type": "component"
+    },
+    {
+     "name": "elementIndex",
+     "type": "number"
+    },
+    {
+     "name": "width",
+     "type": "number"
+    }
+   ]
+  }
+ ],
+ "blockProperties": [
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ElementBackgroundColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ElementHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ElementValue",
+   "description": "",
+   "type": "list"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonBackgroundColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonShape",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonText",
+   "description": "",
+   "type": "text"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonTextFontBold",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonTextFontSize",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "ExtraButtonWidth",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconBackgroundColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconImage",
+   "description": "",
+   "type": "text"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconShape",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconTextColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconTextFontBold",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconTextFontSize",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconWidth",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Size",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SubText",
+   "description": "",
+   "type": "text"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SubTextColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SubTextFontBold",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SubTextFontSize",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SubTextHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "Text",
+   "description": "",
+   "type": "text"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextFontBold",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextFontSize",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextHeight",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "UnderlineColor",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "UnderlineWidth",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "UseGlobalProperties",
+   "description": "",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "WidthAfterIcon",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "WidthBeforeExtraButton",
+   "description": "",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "WidthBeforeIcon",
+   "description": "",
+   "type": "number"
+  }
+ ],
+ "helpUrl": "",
+ "type": "cn.colintree.aix.ColinTreeListView.ColinTreeListViewElement",
+ "androidMinSdk": 7,
+ "version": "10",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "ColinTreeListViewElement",
+ "helpString": "by ColinTree at http://aix.colintree.cn/",
+ "properties": [],
+ "events": []
+}]

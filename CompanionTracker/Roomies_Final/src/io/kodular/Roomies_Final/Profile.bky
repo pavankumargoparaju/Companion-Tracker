@@ -1,0 +1,412 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="NwS~)aFD1Z]9OIhIOd,v" x="-590" y="-1410">
+    <mutation component_type="ImagePicker" is_generic="false" instance_name="Image_Picker1" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">Image_Picker1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Yw8.oayQ_@cG]/?hNsbM">
+        <mutation component_type="ImagePicker" set_or_get="set" property_name="Image" is_generic="false" instance_name="Image_Picker1"></mutation>
+        <field name="COMPONENT_SELECTOR">Image_Picker1</field>
+        <field name="PROP">Image</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="5g/6W:F`ml+~~oUQ:LI!">
+            <mutation component_type="ImagePicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="Image_Picker1"></mutation>
+            <field name="COMPONENT_SELECTOR">Image_Picker1</field>
+            <field name="PROP">Selection</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_set_get" id="%7)aFY_RFuzIvJ|by)um" x="-650" y="-1290">
+    <mutation component_type="ActivityStarter" set_or_get="set" property_name="Action" is_generic="false" instance_name="Activity_Starter1"></mutation>
+    <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+    <field name="PROP">Action</field>
+    <value name="VALUE">
+      <block type="text" id="K9pgSe;0tgQux|*dI4QS">
+        <field name="TEXT">com.android.camera.action.CROP</field>
+      </block>
+    </value>
+    <next>
+      <block type="component_set_get" id=",rV9{^((%mog,4g2Pk1}">
+        <mutation component_type="ActivityStarter" set_or_get="set" property_name="Extras" is_generic="false" instance_name="Activity_Starter1"></mutation>
+        <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+        <field name="PROP">Extras</field>
+        <value name="VALUE">
+          <block type="lists_create_with" id="LyO=liW%4OoF@.N75Qk$" inline="false">
+            <mutation items="6"></mutation>
+            <value name="ADD0">
+              <block type="lists_create_with" id="Z?s{Bb=c3S9P+ZSF?]f;">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="N?Q91yK}qSdA0/;bi@B1">
+                    <field name="TEXT">android.intent.category.DEFAULT</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="-P?j3[`Q{VsM}{zOn7%o">
+                    <field name="TEXT">"crop","true"</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lists_create_with" id="ap1IdycVSFw0Um9O0uH2">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="6)9p65B_Ej%dPY8v7l@{">
+                    <field name="TEXT">android.intent.category.DEFAULT</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="OqAP!sl=s9@?+^z]~r#W">
+                    <field name="TEXT">"return-data",true</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="lists_create_with" id="Hnvm3J$)x~C;v_tO$d9c">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="2L?#Q$XkWddZ`|nT-EgB">
+                    <field name="TEXT">android.intent.category.DEFAULT</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id=":H~UohPqCrz-oezm6HcJ">
+                    <field name="TEXT">"aspectX",100</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="lists_create_with" id="r/b2kFq;3DIU_o|E|v,.">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="HC:ygxh9$$WW|N{3O7^#">
+                    <field name="TEXT">android.intent.category.DEFAULT</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="C1obMi[R6(g,iF}3/FW-">
+                    <field name="TEXT">"aspectY",100</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ADD4">
+              <block type="lists_create_with" id="wFn1NDd-o{_@6EWcuAQ6">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="*fg/ar%u]Uw8Dort5%JQ">
+                    <field name="TEXT">android.intent.category.DEFAULT</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="M(aU~-jDVn-t{B.KC(FR">
+                    <field name="TEXT">"outputX",255</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ADD5">
+              <block type="lists_create_with" id="z0UGFMb0XpA0=lqX5n77">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="9~LpDo#Izw,*~F^J~wyD">
+                    <field name="TEXT">android.intent.category.DEFAULT</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="[%#a1IScF2iiz[s~0@c]">
+                    <field name="TEXT">"outputY",255</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="o3zl`9r$~yi?LyltCTl^">
+            <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataUri" is_generic="false" instance_name="Activity_Starter1"></mutation>
+            <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+            <field name="PROP">DataUri</field>
+            <value name="VALUE">
+              <block type="text_join" id="-KVievU(F]v$a)Sh}{7g">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="x,Y/TFw/RPI_e7n`F7J8">
+                    <field name="TEXT">file://</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="component_set_get" id="d[9KnX!ZA]53@B*;O,2!">
+                    <mutation component_type="ImagePicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="Image_Picker1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Image_Picker1</field>
+                    <field name="PROP">Selection</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="Y/]!M;1`iN=D$SAQFU:o">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="text_isEmpty" id="kJ:yt4ZyE!g-!:Nh;V`(">
+                    <value name="VALUE">
+                      <block type="component_method" id="gjc[;r{6wPRJ[ZP00_G3">
+                        <mutation component_type="ActivityStarter" method_name="ResolveActivity" is_generic="false" instance_name="Activity_Starter1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="component_method" id="GmrVnP?7gC6V7T0bG[*J">
+                    <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Notifier1</field>
+                    <value name="ARG0">
+                      <block type="text" id="Rvox`=0[bfqKb{~FJa$:">
+                        <field name="TEXT">Error</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="component_method" id="/%=KM)2`)OoM^]Tm]0l-">
+                    <mutation component_type="ActivityStarter" method_name="StartActivity" is_generic="false" instance_name="Activity_Starter1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+                  </block>
+                </statement>
+                <next>
+                  <block type="component_set_get" id="kqyG_x#vP|63,~Q4O9ih">
+                    <mutation component_type="ActivityStarter" set_or_get="set" property_name="DataType" is_generic="false" instance_name="Activity_Starter1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+                    <field name="PROP">DataType</field>
+                    <value name="VALUE">
+                      <block type="text" id="FH2[j]jLR[8Ld2sxrYyi">
+                        <field name="TEXT">image/*</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="component_event" id="kdykR$Y42eNKtAodg}jv" x="-130" y="-602">
+    <mutation component_type="ActivityStarter" is_generic="false" instance_name="Activity_Starter1" event_name="ActivityError"></mutation>
+    <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+    <statement name="DO">
+      <block type="component_method" id="{B^@1A)(wcKC|BB(Pd{$">
+        <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="lexical_variable_get" id="Jk78;ca24s0%!PpDQFy+">
+            <mutation>
+              <eventparam name="message"></eventparam>
+            </mutation>
+            <field name="VAR">message</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="h!3q8W8xHIMECVc_@)ou" x="-650" y="-542">
+    <mutation component_type="ActivityStarter" is_generic="false" instance_name="Activity_Starter1" event_name="AfterActivity"></mutation>
+    <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="hcc.)|;#In`5yO9Uw;{^">
+        <mutation component_type="ImagePicker" set_or_get="set" property_name="Image" is_generic="false" instance_name="Image_Picker1"></mutation>
+        <field name="COMPONENT_SELECTOR">Image_Picker1</field>
+        <field name="PROP">Image</field>
+        <value name="VALUE">
+          <block type="text_join" id="gu.9-6KgdOqa[HOqi?@@">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="lexical_variable_get" id="(,HtyeX[31wt$=%)z[PZ">
+                <mutation>
+                  <eventparam name="result"></eventparam>
+                </mutation>
+                <field name="VAR">result</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="component_set_get" id="WPA`vd(NM%9_Cx^C/UCU">
+                <mutation component_type="ActivityStarter" set_or_get="get" property_name="ResultUri" is_generic="false" instance_name="Activity_Starter1"></mutation>
+                <field name="COMPONENT_SELECTOR">Activity_Starter1</field>
+                <field name="PROP">ResultUri</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="%j1!?LsgqB[+wxF2BgA7" x="-650" y="-402">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_Upload" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_Upload</field>
+    <statement name="DO">
+      <block type="controls_if" id="GyC!rYV$GetFI^*u-xR!">
+        <value name="IF0">
+          <block type="component_method" id="u64qD[C{%yX^qG!:--*l">
+            <mutation component_type="KodularFirebaseAuthentication" method_name="IsSignedIn" is_generic="false" instance_name="Firebase_Authentication1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="AMW15#{3V=rxA@v+O~)+">
+            <mutation component_type="KodularFirebaseAuthentication" method_name="GetCurrentUser" is_generic="false" instance_name="Firebase_Authentication1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="+04d#[X{|L)t4^{~++j_" x="-650" y="-282">
+    <field name="NAME">UID</field>
+    <value name="VALUE">
+      <block type="text" id="-d{7BDo=rKTJ*i``HH2_">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="l3K^)l9Gk#+jHO.PiIAc" x="-670" y="-222">
+    <mutation component_type="KodularFirebaseAuthentication" is_generic="false" instance_name="Firebase_Authentication1" event_name="CurrentUserSuccess"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="u/C:[Lpr)eoIXu~@STEl">
+        <field name="VAR">global UID</field>
+        <value name="VALUE">
+          <block type="lexical_variable_get" id="rnbrW{xu%B]AgthLdLc]">
+            <mutation>
+              <eventparam name="userID"></eventparam>
+            </mutation>
+            <field name="VAR">user ID</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="v6dy;BTt+#m|O00H[gYH">
+            <mutation component_type="FirebaseStorage" method_name="UploadPhoto" is_generic="false" instance_name="FirebaseStorage1"></mutation>
+            <field name="COMPONENT_SELECTOR">FirebaseStorage1</field>
+            <value name="ARG0">
+              <block type="lexical_variable_get" id="*K}F%MGPk#|]2@I8[ID8">
+                <mutation>
+                  <eventparam name="userID"></eventparam>
+                </mutation>
+                <field name="VAR">user ID</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="Z1/X^;j~Ph6;}9jagPq!">
+                <mutation component_type="ImagePicker" set_or_get="get" property_name="Image" is_generic="false" instance_name="Image_Picker1"></mutation>
+                <field name="COMPONENT_SELECTOR">Image_Picker1</field>
+                <field name="PROP">Image</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="_,hSzQ?h.PF!SOK8(`cs">
+                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                <value name="ARG0">
+                  <block type="text" id="B9Q.@X^(P^H`TP_$r*W+">
+                    <field name="TEXT">Uploading</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id=",[~`VdKDQ)m%-*L}pWgf">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="{8j`G9EOhTWqySWqcVg/" x="-110" y="-242">
+    <mutation component_type="KodularFirebaseAuthentication" is_generic="false" instance_name="Firebase_Authentication1" event_name="CurrentUserFailed"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+    <statement name="DO">
+      <block type="component_method" id="xC_(t@@S`W_t{|-`|mMu">
+        <mutation component_type="Notifier" method_name="ShowTextDialog" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="text" id="%a9^?^-Uqo%(A@QBTnA^">
+            <field name="TEXT">Error</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="pmv=iFc([?Wgyy2{K#kM">
+            <field name="TEXT">Failed</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="logic_boolean" id="B=`;OyTHn9h*J]Zk*(Gu">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="w4.@!ukV4CY+8~cfs1*5" x="-650" y="38">
+    <mutation component_type="FirebaseStorage" is_generic="false" instance_name="FirebaseStorage1" event_name="Response"></mutation>
+    <field name="COMPONENT_SELECTOR">FirebaseStorage1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="7){sXA?76MuIB[.M:*@8">
+        <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+        <field name="PROP">ProjectBucket</field>
+        <value name="VALUE">
+          <block type="text" id="W[qWk9t%D7~rgS].8`+,">
+            <field name="TEXT">UserDetails</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="|Y=K=[[C)EB@B+aT=T(Q">
+            <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+            <value name="ARG0">
+              <block type="lexical_variable_get" id="P2wX;r^)aOD9hW/y4HNp">
+                <field name="VAR">global UID</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="lexical_variable_get" id="?@kU}dmo}Dfdryq?WDKF">
+                <mutation>
+                  <eventparam name="downloadUrl"></eventparam>
+                </mutation>
+                <field name="VAR">downloadUrl</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="ghA/{6:A!zmgQa-A)@9F">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                <next>
+                  <block type="controls_openAnotherScreenWithStartValue" id="x6c/V5,I`Jh=)%[I`@6c">
+                    <value name="SCREENNAME">
+                      <block type="text" id="Nj5.kGuq`NC4qM$Y(n.~">
+                        <field name="TEXT">Questions</field>
+                      </block>
+                    </value>
+                    <value name="STARTVALUE">
+                      <block type="lexical_variable_get" id="k3{iGQ9N1V8VS`_|eM2H">
+                        <field name="VAR">global UID</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="206" language-version="26"></yacodeblocks>
+</xml>

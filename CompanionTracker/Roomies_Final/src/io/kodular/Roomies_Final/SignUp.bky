@@ -1,0 +1,414 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="X)AX8wT$P%@yY3[KvfkA" x="-1050" y="-2190">
+    <mutation component_type="TextBox" is_generic="false" instance_name="txt_ConfirmPassword" event_name="OnTextChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">txt_ConfirmPassword</field>
+    <statement name="DO">
+      <block type="controls_if" id="ldb]MjVvJ%|}8!fIw]5G">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_operation" id=")2GX4c!dsQ|.!l[[q#fb">
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="qWtIf,R;o17F=vab5hx^">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="G8@+2:_h)0U[^6.e]~!c">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_Email"></mutation>
+                    <field name="COMPONENT_SELECTOR">txt_Email</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="K%vqA:4l^4KV8c8#FiNS">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id="dSK8h5fUnVzzrSP9V4%%">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="3UAIgDx-yR^!E)^*REEw">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_Password"></mutation>
+                    <field name="COMPONENT_SELECTOR">txt_Password</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="wKG,Dz|oI-)A3aG^zyUK">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="6kRXy.Cxi_r,]Em)hpn1">
+            <mutation component_type="Button" set_or_get="set" property_name="Enabled" is_generic="false" instance_name="btn_Register"></mutation>
+            <field name="COMPONENT_SELECTOR">btn_Register</field>
+            <field name="PROP">Enabled</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="njSu%,N?br}Oij@k|mmt">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="_/3^7yjm7Q;Suf@jFrTA">
+                <mutation component_type="Button" set_or_get="set" property_name="BackgroundColor" is_generic="false" instance_name="btn_Register"></mutation>
+                <field name="COMPONENT_SELECTOR">btn_Register</field>
+                <field name="PROP">BackgroundColor</field>
+                <value name="VALUE">
+                  <block type="color_teal" id="n(/U3WsdD8bf9w0yor=K">
+                    <field name="COLOR">#009688</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="zWrEdJT0q4Hq@xMHEO`I">
+            <mutation component_type="Button" set_or_get="set" property_name="Enabled" is_generic="false" instance_name="btn_Register"></mutation>
+            <field name="COMPONENT_SELECTOR">btn_Register</field>
+            <field name="PROP">Enabled</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="0{_5LEi06(P4NCbPFVA4">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="v,6AHqQ{U,;F}x(dfZiq">
+                <mutation component_type="Button" set_or_get="set" property_name="BackgroundColor" is_generic="false" instance_name="btn_Register"></mutation>
+                <field name="COMPONENT_SELECTOR">btn_Register</field>
+                <field name="PROP">BackgroundColor</field>
+                <value name="VALUE">
+                  <block type="color_teal" id="LpZn]==d{{+!|!B]K)QD">
+                    <field name="COLOR">#c0c0c0</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="kySG~X^9Uy5n,iuI6yKA" x="-1050" y="-1950">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_Register" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_Register</field>
+    <statement name="DO">
+      <block type="controls_if" id="),V4Vi{FQBp8~nj|1cld">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="p6:V,=r8:s%Uc!nko9JE">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="tJgo?j-/9rYhOb``0PA~">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_Password"></mutation>
+                <field name="COMPONENT_SELECTOR">txt_Password</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="component_set_get" id="x;exXC2P`NrJj?N?V$)=">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_ConfirmPassword"></mutation>
+                <field name="COMPONENT_SELECTOR">txt_ConfirmPassword</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="rtcUbrR6Dd*2Y-N,)ikU">
+            <mutation component_type="KodularFirebaseAuthentication" method_name="EmailPasswordSignUp" is_generic="false" instance_name="Firebase_Authentication1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+            <value name="ARG0">
+              <block type="component_set_get" id="4R]k|rF+;~c,TV0Ejb8e">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_Email"></mutation>
+                <field name="COMPONENT_SELECTOR">txt_Email</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="uZ|[K_/4ETdYjW]=TSP(">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_Password"></mutation>
+                <field name="COMPONENT_SELECTOR">txt_Password</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="%p)Bwkb#CKgaZ1c2wVw1">
+            <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="6H%EFWwk?`!|jaH~9sU2">
+                <field name="TEXT">Password and Confirm Password should be the same</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="Qky@yU{z2ehs/|*G+`rm">
+                <field name="TEXT">Error</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="text" id=":Y:y#H3DwB85b/jgvo.c">
+                <field name="TEXT">OK</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="%.Opbtpr^Uzu_[I,38tL" x="-190" y="-1830">
+    <mutation component_type="Form" is_generic="false" instance_name="SignUp" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">SignUp</field>
+  </block>
+  <block type="component_event" id="m%mw.`$1gt4`DULb]`Eq" x="-1010" y="-1610">
+    <mutation component_type="Form" is_generic="false" instance_name="SignUp" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">SignUp</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="nWAVg,x#TS$eG+},$:{{">
+        <value name="SCREEN">
+          <block type="text" id="M;,xknFN;/hd+p=Zix53">
+            <field name="TEXT">Login</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="?aH8,qDDjizXUo)Mc(~g" x="-1010" y="-1490">
+    <mutation component_type="KodularFirebaseAuthentication" is_generic="false" instance_name="Firebase_Authentication1" event_name="SignUpFailed"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+    <statement name="DO">
+      <block type="component_method" id="WTtm:+C;+H3Kc1L!Oiie">
+        <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="lexical_variable_get" id="AD-{#d*KaDu4C]Lzs_|n">
+            <mutation>
+              <eventparam name="message"></eventparam>
+            </mutation>
+            <field name="VAR">message</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="HD.Q,ehsm$]RTD{x.wW,">
+            <field name="TEXT">Error</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="text" id="HqGh/_PgWnt(Qu4nCT)d">
+            <field name="TEXT">OK</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="R/tN|M$E){/t7+@d*X7~" x="-1010" y="-1290">
+    <mutation component_type="KodularFirebaseAuthentication" is_generic="false" instance_name="Firebase_Authentication1" event_name="SignUpSuccess"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Authentication1</field>
+    <statement name="DO">
+      <block type="controls_if" id="Yaa|W{3Q*G%Y3|K_s$3;">
+        <mutation elseif="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="nN2~4)0)4psn626Sq^{b">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="controls_getStartValue" id="hR.kn.8_E5a##aux_k#;"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="X`cn07ELe.mML45afCba">
+                <field name="TEXT">Roomie</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="?pkBQX1QF8jM%6[U6B:a">
+            <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+            <field name="PROP">ProjectBucket</field>
+            <value name="VALUE">
+              <block type="text" id="9*o%R}u$Yr/CC`_]$Sc:">
+                <field name="TEXT">UserDetails</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="+t1KJ|A-x5M39mFlJ5-d">
+                <mutation component_type="FirebaseDB" method_name="StoreValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                <value name="ARG0">
+                  <block type="lexical_variable_get" id="%Ku4(3go1xQDx6v~Qd3g">
+                    <mutation>
+                      <eventparam name="userID"></eventparam>
+                    </mutation>
+                    <field name="VAR">user ID</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="lists_create_with" id="j-}(oIRp3nBSHi%E#~n3">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="component_set_get" id="tbK}tLi1cdW$}l0+cpt(">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_Username"></mutation>
+                        <field name="COMPONENT_SELECTOR">txt_Username</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="component_set_get" id="f+~+Zg=~!w){=uW!LXs|">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_Email"></mutation>
+                        <field name="COMPONENT_SELECTOR">txt_Email</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="%*.2V+mgBLCN/UK_Qbn=">
+                    <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Notifier1</field>
+                    <value name="ARG0">
+                      <block type="text" id="e?n,okAcq(3@RG]2)vvC">
+                        <field name="TEXT">SignUp Successful</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="text" id="LiBE:nTl0nc|p^4RS;OU">
+                        <field name="TEXT">Loading</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block type="text" id="ZWT=Z#gz{-G{LG[Hdm(s">
+                        <field name="TEXT">OK</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_openAnotherScreenWithStartValue" id="t=|$2qfcy)W!I!^~TAv;">
+                        <value name="SCREENNAME">
+                          <block type="text" id="(B8;TV].9;Ta$B#!6LQD">
+                            <field name="TEXT">Profile</field>
+                          </block>
+                        </value>
+                        <value name="STARTVALUE">
+                          <block type="lexical_variable_get" id="!ERRMvU*kQ@J4%SXYHA=">
+                            <mutation>
+                              <eventparam name="userID"></eventparam>
+                            </mutation>
+                            <field name="VAR">user ID</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="lCM(g0tJKniNdTUF:NXf">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="controls_getStartValue" id="y~B{AB[IdaA4Kux7Mw`s"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="/BOd39dt{,T}(MzFPy}N">
+                <field name="TEXT">Post</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="component_set_get" id="_;/p~)8VYG6n5WoYQ1e;">
+            <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+            <field name="PROP">ProjectBucket</field>
+            <value name="VALUE">
+              <block type="text" id="ha{2Aacl*uWQ=6SO]=O!">
+                <field name="TEXT">OwnerDetails</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="CVs0)|wXgdi$(6Bl~_Jm">
+                <mutation component_type="FirebaseDB" method_name="StoreValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                <value name="ARG0">
+                  <block type="lexical_variable_get" id="3azS8=4}R.dYW6$Ma5;h">
+                    <mutation>
+                      <eventparam name="userID"></eventparam>
+                    </mutation>
+                    <field name="VAR">user ID</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="lists_create_with" id="N.]iI@41=#(7hVPOLg]3">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="component_set_get" id="A^ofg7sV`PELT[n_~^[y">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_Username"></mutation>
+                        <field name="COMPONENT_SELECTOR">txt_Username</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="component_set_get" id="qR@D_#kbnNBXi]_`%l[K">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_Email"></mutation>
+                        <field name="COMPONENT_SELECTOR">txt_Email</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="$:s6e7ZpPa]4rJwqlOIB">
+                    <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Notifier1</field>
+                    <value name="ARG0">
+                      <block type="text" id="sLgOO6@R[Lgik?0yA.,p">
+                        <field name="TEXT">SignUp Successful</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="text" id="c;xl4FxY#OBl^J9Ha8+N">
+                        <field name="TEXT">Loading</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block type="text" id="T$3{CB4osfQYJFND![9q">
+                        <field name="TEXT">OK</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_openAnotherScreenWithStartValue" id="[jf[EL]NuZ1#p~@9IeMW">
+                        <value name="SCREENNAME">
+                          <block type="text" id="^P%0{kQPHtN7X(F?~G8e">
+                            <field name="TEXT">Add_Room</field>
+                          </block>
+                        </value>
+                        <value name="STARTVALUE">
+                          <block type="lexical_variable_get" id="m/)n!S]s@BHX~bZoiXP|">
+                            <mutation>
+                              <eventparam name="userID"></eventparam>
+                            </mutation>
+                            <field name="VAR">user ID</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="206" language-version="26"></yacodeblocks>
+</xml>

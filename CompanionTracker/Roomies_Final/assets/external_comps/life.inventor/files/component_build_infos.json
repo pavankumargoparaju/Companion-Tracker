@@ -1,0 +1,1 @@
+[{"libraries":[],"assets":[],"native":[],"broadcastReceivers":[],"permissions":["android.permission.READ_EXTERNAL_STORAGE","android.permission.CAMERA","android.permission.WRITE_EXTERNAL_STORAGE","android.permission.RECORD_AUDIO"],"broadcastReceiver":[],"activities":[],"type":"life.inventor.CameraViewer"}]

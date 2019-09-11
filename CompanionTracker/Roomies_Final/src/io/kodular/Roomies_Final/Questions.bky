@@ -1,0 +1,1713 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="AN9vXVd30O**IhQW|+:%" x="30" y="1710">
+    <field name="NAME">cities</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="luAL92[B*2qA?78FA3|M">
+        <mutation items="19"></mutation>
+        <value name="ADD0">
+          <block type="text" id="8P)-1;cN@bXI%j@|EmS[">
+            <field name="TEXT">Cameron</field>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block type="text" id="hOsc8,RaY1yc_t/S:odD">
+            <field name="TEXT">Mckay</field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block type="text" id="6yT=?y[4}h|wQOY6Y#=g">
+            <field name="TEXT">Prince</field>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block type="text" id="Xv!{fTu^Z~mPMK0up*AX">
+            <field name="TEXT">California Ave</field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block type="text" id="%frY#VAz@0P^aMe.ul#T">
+            <field name="TEXT">Campbell</field>
+          </block>
+        </value>
+        <value name="ADD5">
+          <block type="text" id="z9!~Y#N|F@e;:Z#i}Wuv">
+            <field name="TEXT">Randolph</field>
+          </block>
+        </value>
+        <value name="ADD6">
+          <block type="text" id="BK(E@JJg)A/8.jw9k/p,">
+            <field name="TEXT">Rankin</field>
+          </block>
+        </value>
+        <value name="ADD7">
+          <block type="text" id="i!{kN?VUi8?V}w{;vg%8">
+            <field name="TEXT">Bridge</field>
+          </block>
+        </value>
+        <value name="ADD8">
+          <block type="text" id="i.b)$H,KJkVU@x(#+5@B">
+            <field name="TEXT">Curry Avenue</field>
+          </block>
+        </value>
+        <value name="ADD9">
+          <block type="text" id="AXP98=S2RGW^F{*g9@E0">
+            <field name="TEXT">Wellington</field>
+          </block>
+        </value>
+        <value name="ADD10">
+          <block type="text" id="syDanU^uET%/^JU:s:~4">
+            <field name="TEXT">Sandwich</field>
+          </block>
+        </value>
+        <value name="ADD11">
+          <block type="text" id="Hq]bOkI#(S]^vF5;ecw/">
+            <field name="TEXT">Bruce</field>
+          </block>
+        </value>
+        <value name="ADD12">
+          <block type="text" id="UkzZAbM2w]Wg86xX.Nw5">
+            <field name="TEXT">Roseville</field>
+          </block>
+        </value>
+        <value name="ADD13">
+          <block type="text" id="rT$LV[t@b#Ne26MEambv">
+            <field name="TEXT">Sunset</field>
+          </block>
+        </value>
+        <value name="ADD14">
+          <block type="text" id="@7qdT;g_K0Y3oc;gJJpX">
+            <field name="TEXT">Sandwich</field>
+          </block>
+        </value>
+        <value name="ADD15">
+          <block type="text" id="M?RJod[W!|FdD=An{[2^">
+            <field name="TEXT">Dougal</field>
+          </block>
+        </value>
+        <value name="ADD16">
+          <block type="text" id="9]0$gYaRUU}}*[YFxglO">
+            <field name="TEXT">Park</field>
+          </block>
+        </value>
+        <value name="ADD17">
+          <block type="text" id="3*|E+evM}U@hS0G@t~Tr">
+            <field name="TEXT">Rosedale</field>
+          </block>
+        </value>
+        <value name="ADD18">
+          <block type="text" id="0D=Sk-pfsqAqn0l?SA2c">
+            <field name="TEXT">Brampton</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="Vdhb9JXz+hzl#q~l8.Ls" x="-590" y="1930">
+    <mutation component_type="ListPicker" is_generic="false" instance_name="area_pick" event_name="BeforePicking"></mutation>
+    <field name="COMPONENT_SELECTOR">area_pick</field>
+    <statement name="DO">
+      <block type="component_set_get" id="{yr/Evpjc^[WKDs#8^r=">
+        <mutation component_type="ListPicker" set_or_get="set" property_name="Elements" is_generic="false" instance_name="area_pick"></mutation>
+        <field name="COMPONENT_SELECTOR">area_pick</field>
+        <field name="PROP">Elements</field>
+        <value name="VALUE">
+          <block type="lexical_variable_get" id="Br!ZYw*PO,u4E}fM0;)=">
+            <field name="VAR">global cities</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_set_get" id="z{*mDYWB731PU{%gLLA}" x="-752" y="2142">
+    <mutation component_type="ListView" set_or_get="get" property_name="BackgroundColor" is_generic="false" instance_name="List_View3"></mutation>
+    <field name="COMPONENT_SELECTOR">List_View3</field>
+    <field name="PROP">BackgroundColor</field>
+  </block>
+  <block type="component_event" id="84:?}u?cvQR~3(M,DPkP" x="-752" y="2299">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="single" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">single</field>
+    <statement name="DO">
+      <block type="controls_if" id="ai+|;OTS3`WQP=0nwbuq">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="tmTO9Jbjd`CBG!)Ab%?7">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="5(T%E9GrJ@6ID.G%dTn[">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="divorce"></mutation>
+            <field name="COMPONENT_SELECTOR">divorce</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="@05CfDZ_U{Onm=s;$tuZ">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="G!G{hH39wVzS$mzU5t)v">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="married"></mutation>
+                <field name="COMPONENT_SELECTOR">married</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="qQi*dsf-$/VAk6;%%**v">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="Tlg`O6OHjc`xPt%w8#Xm">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="livein"></mutation>
+                    <field name="COMPONENT_SELECTOR">livein</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="iqy*kM6VFu}:~%WBY|Ma">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="qkOjR$qX%14~|O{N,y)4">
+                        <field name="VAR">global reltn</field>
+                        <value name="VALUE">
+                          <block type="component_set_get" id=".xiQdYi*$;Z`)hl#Vf@s">
+                            <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="single"></mutation>
+                            <field name="COMPONENT_SELECTOR">single</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="^v|:a8]u52De:p+C1|2M" x="-322" y="2299">
+    <field name="NAME">gender</field>
+    <value name="VALUE">
+      <block type="text" id="[Ac+CDCh/k1uENrYT!!U">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="(0Na^B?VB%FI$tjMQ2#x" x="-41" y="2299">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="divorce" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">divorce</field>
+    <statement name="DO">
+      <block type="controls_if" id="#4vM~4X-=cK?QU`5Wuo`">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="Zur%!xaxxTzSm}H/;5Wk">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="]:BFMs?4PSK|1|jeM4J,">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="single"></mutation>
+            <field name="COMPONENT_SELECTOR">single</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="C/rhHa$t!!T$t^okf!%m">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="s,Sal]^wYb,(C7MOrP])">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="married"></mutation>
+                <field name="COMPONENT_SELECTOR">married</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="ZkesfcJ#~*n=RT2$90{r">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="lX@Aj7Rc~t~-/|*UCDOu">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="livein"></mutation>
+                    <field name="COMPONENT_SELECTOR">livein</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="e[^`KI~T,}`QaQDpiXdm">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="1)UMKe1J5bQ+WAXj4NOR">
+                        <field name="VAR">global reltn</field>
+                        <value name="VALUE">
+                          <block type="component_set_get" id="Qa`(pD7tvu.hh/@*PKXV">
+                            <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="divorce"></mutation>
+                            <field name="COMPONENT_SELECTOR">divorce</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="jqGhursX/*P*cmC/f(zz" x="390" y="2299">
+    <field name="NAME">persontype</field>
+    <value name="VALUE">
+      <block type="text" id="jC}g,Cj/Tt(/^ptn1GQ`">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="8i_8;j#O@f1wFt61+R3W" x="-752" y="2533">
+    <field name="NAME">lease</field>
+    <value name="VALUE">
+      <block type="text" id="e8Eem^T7@:-CW![FVc3r">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="XG-AG$Z8V`QiD[Q61a|O" x="-482" y="2533">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="rd_male" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">rd_male</field>
+    <statement name="DO">
+      <block type="controls_if" id="r?^8[cy*cfEmn#;NJFMr">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="bp1G?TZ+Z259U|w4npWS">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="A.#{NEG@3[C^{MmfY?V.">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_female"></mutation>
+            <field name="COMPONENT_SELECTOR">rd_female</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="o?B{zt;bIu-O:2#sHXK4">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="vqym]HFE]R1wBA,mULoq">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_notinterested"></mutation>
+                <field name="COMPONENT_SELECTOR">rd_notinterested</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id=",dE/z~w+Tso]^5*U!iE~">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="3TfG5*)0,2|2hyYT$S$w">
+                    <field name="VAR">global gender</field>
+                    <value name="VALUE">
+                      <block type="component_set_get" id="/}Yqa0GS4#+jXt8F=0]#">
+                        <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="rd_male"></mutation>
+                        <field name="COMPONENT_SELECTOR">rd_male</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="HNxhLluyWp8X}U4FPYDn" x="5" y="2533">
+    <field name="NAME">reltn</field>
+    <value name="VALUE">
+      <block type="text" id="MapM|b^s9pAmFz7KY#2z">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id=":$G}Hzcn16~kRNxR[5K4" x="269" y="2533">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="livein" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">livein</field>
+    <statement name="DO">
+      <block type="controls_if" id="Tlw-3/nblh)XHr2_vy:!">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="Bg51n)3G$B1.ow$EU$C|">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id=")q]RcA8p{YtuSphx}YmZ">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="divorce"></mutation>
+            <field name="COMPONENT_SELECTOR">divorce</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="],/U.{MorjBs*^7Ip=Vh">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="dD%6#9K^3gG-OE/cf@Y#">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="single"></mutation>
+                <field name="COMPONENT_SELECTOR">single</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="=,9jHcmz}@!oYP/{}JQy">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="kI5DGq.4ZVYAS!eJ[JB]">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="married"></mutation>
+                    <field name="COMPONENT_SELECTOR">married</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="r}(lIX.-6u|*QJst/9q)">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="=eW,3f90l^$Re[[-(rRX">
+                        <field name="VAR">global reltn</field>
+                        <value name="VALUE">
+                          <block type="component_set_get" id="K%Rwl[e~uL}M,Yb/%(R;">
+                            <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="livein"></mutation>
+                            <field name="COMPONENT_SELECTOR">livein</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="6ErqSSKA^LwXqd,BM_b*" x="-752" y="2767">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="married" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">married</field>
+    <statement name="DO">
+      <block type="controls_if" id="rqc=2,,,HmT)umXhuvs9">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="(`4bw_vSAH^^IIM:t{nx">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="nl,|9Q^w8}|/Y4=0yff1">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="divorce"></mutation>
+            <field name="COMPONENT_SELECTOR">divorce</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="t!:W|o~g8/(px/ue5(@{">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="$$u6HCp~:GdvzXX24c*p">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="single"></mutation>
+                <field name="COMPONENT_SELECTOR">single</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="HQ7+sUJC|Rr/kawPT4;4">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="2pNyl2Y5[Ko}NiXoR;;0">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="livein"></mutation>
+                    <field name="COMPONENT_SELECTOR">livein</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="]:i]!ETXGK*n0r)$MEr8">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="iaEn:@nUx$)1c:mfSi?{">
+                        <field name="VAR">global reltn</field>
+                        <value name="VALUE">
+                          <block type="component_set_get" id="X3UF!/3Lv,Jp$LG3(Z)+">
+                            <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="married"></mutation>
+                            <field name="COMPONENT_SELECTOR">married</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=")5f+jF~Jd0)6vRWcA~1{" x="-320" y="2767">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="rd_female" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">rd_female</field>
+    <statement name="DO">
+      <block type="controls_if" id="hJ,i9I9Ep.;)ps$.Tby9">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="@@gurkUs3CkVutg]iZZW">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="ohABiA=B]T_7@X^V!?Aj">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_male"></mutation>
+            <field name="COMPONENT_SELECTOR">rd_male</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="(C-|z9jG[w[rnq3o/f_b">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="oA(@aN.?dP`CmW`*~bag">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_notinterested"></mutation>
+                <field name="COMPONENT_SELECTOR">rd_notinterested</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="PYAL|E,A[xbyZl_YhF:7">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="/QcXbMtfv8;fs]d`yWs|">
+                    <field name="VAR">global gender</field>
+                    <value name="VALUE">
+                      <block type="component_set_get" id="_D_i(YqlP!,t0{i2}7--">
+                        <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="rd_female"></mutation>
+                        <field name="COMPONENT_SELECTOR">rd_female</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="LmW57oa6c#ersjv)S.1:" x="166" y="2767">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="rd_notinterested" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">rd_notinterested</field>
+    <statement name="DO">
+      <block type="controls_if" id="QA(Nlnj,-|@g5~FTUU.l">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="V7RG0CY|{;)Ua56r#RjU">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="L5Hf$5%(Ri$=5,emyIJY">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_female"></mutation>
+            <field name="COMPONENT_SELECTOR">rd_female</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="5qVf,-)35B6S:RAKNCH$">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="Us0ECT1d+tnFB-Qjhc%F">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_male"></mutation>
+                <field name="COMPONENT_SELECTOR">rd_male</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="gW,HxSq|$~d593lF]vzh">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id=")YMTx[XKZThEg}j6y5}Q">
+                    <field name="VAR">global gender</field>
+                    <value name="VALUE">
+                      <block type="component_set_get" id="CB+rAq#m`tro^xEyzZBb">
+                        <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="rd_notinterested"></mutation>
+                        <field name="COMPONENT_SELECTOR">rd_notinterested</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="C!Ov4|pMNmiXirz6`8M," x="-752" y="3001">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="rd_monthly" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">rd_monthly</field>
+    <statement name="DO">
+      <block type="controls_if" id="4P}6a2DqF;sM1P))t]6m">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="9NXn:p}+#F~?stNelbBE">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="!V}2@c|-a3LRmWA9+XW#">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_quaterly"></mutation>
+            <field name="COMPONENT_SELECTOR">rd_quaterly</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="_G+uK]|u.}G?.mMj1R6E">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="c[9(LKWKJ!N724N_N}I:">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_6month"></mutation>
+                <field name="COMPONENT_SELECTOR">rd_6month</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id=".%Jt(7m5s$AiZqMEL+FA">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="^,=s4,9*m6v/+XmS|^J)">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_year"></mutation>
+                    <field name="COMPONENT_SELECTOR">rd_year</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="(w(G8UW$Yo5tdOiZp5,S">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="zHRE[n[c0d/C$o+y*D]X">
+                        <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_other"></mutation>
+                        <field name="COMPONENT_SELECTOR">rd_other</field>
+                        <field name="PROP">Checked</field>
+                        <value name="VALUE">
+                          <block type="logic_false" id="pQXtv{kqVwn*`5Q_DJs!">
+                            <field name="BOOL">FALSE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lexical_variable_set" id="#LsiSs[9pziJ;kyf3y*c">
+                            <field name="VAR">global lease</field>
+                            <value name="VALUE">
+                              <block type="component_set_get" id="gr#;4{4WICTfk*Nzuki7">
+                                <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="rd_monthly"></mutation>
+                                <field name="COMPONENT_SELECTOR">rd_monthly</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="}ju.8%P:PmmD@XvYn,i3" x="-291" y="3001">
+    <field name="NAME">USID</field>
+    <value name="VALUE">
+      <block type="controls_getStartValue" id="X0iM5,rE))j1G+C{1zuU"></block>
+    </value>
+  </block>
+  <block type="component_event" id="s-s)mYF=eOqVplqHL;(u" x="98" y="2990">
+    <mutation component_type="Button" is_generic="false" instance_name="submit" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">submit</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Hfe|0hm~T%g.M=9*nYin">
+        <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+        <field name="PROP">ProjectBucket</field>
+        <value name="VALUE">
+          <block type="text" id="audnT1UR`6^`]#$as[he">
+            <field name="TEXT">UserDetails</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="9~3!+Nk/a}GoF?Y%iaxP">
+            <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+            <value name="ARG0">
+              <block type="lexical_variable_get" id="AIYD}K:Rwl~ybMwB%1==">
+                <field name="VAR">global USID</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="QR+bWMpD{GpPA`G:Z?}n">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="city"></mutation>
+                <field name="COMPONENT_SELECTOR">city</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id=")__~#8a{GA(q^.%S}`*{">
+                <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                <value name="ARG0">
+                  <block type="lexical_variable_get" id="A5FNabFqOa#XP{?pE$o`">
+                    <field name="VAR">global USID</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="component_set_get" id="8g1=AiYG*VYOdPH02zBL">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="age"></mutation>
+                    <field name="COMPONENT_SELECTOR">age</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="b8rI/yCDn$h1pP/F,Slv">
+                    <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                    <value name="ARG0">
+                      <block type="lexical_variable_get" id="q@ae|%dn`Cyw^#o:){Y[">
+                        <field name="VAR">global USID</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="lexical_variable_get" id="BvrIufxT2TY#;d#c+]S`">
+                        <field name="VAR">global gender</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="`^=PAHV$0Yk[m3d+.6g%">
+                        <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                        <value name="ARG0">
+                          <block type="lexical_variable_get" id="Qu2%*ERdzVY[hz4j8vYv">
+                            <field name="VAR">global USID</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="component_set_get" id="zarp*H/zyDJRXb+C~|`S">
+                            <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Value"></mutation>
+                            <field name="COMPONENT_SELECTOR">Value</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="-z1^$XuD_(]|ecPdwg~*">
+                            <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                            <value name="ARG0">
+                              <block type="lexical_variable_get" id="eR/s:z?xd.2x]|K{xbr.">
+                                <field name="VAR">global USID</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="component_set_get" id="2iD*N=L?G/V5a+sU%bB-">
+                                <mutation component_type="DatePicker" set_or_get="get" property_name="MonthInText" is_generic="false" instance_name="datemove_pick"></mutation>
+                                <field name="COMPONENT_SELECTOR">datemove_pick</field>
+                                <field name="PROP">MonthInText</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="component_method" id="gd?XbT)vIviaQk-n/:|V">
+                                <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                <value name="ARG0">
+                                  <block type="lexical_variable_get" id="V]tqPm(LMAg#RA%cjAG,">
+                                    <field name="VAR">global USID</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <block type="lexical_variable_get" id="5Vn-v/HJ2@qekqr^M23Y">
+                                    <field name="VAR">global lease</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_method" id="}Y3HG5x$SH5L!uV@)k@X">
+                                    <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                    <value name="ARG0">
+                                      <block type="lexical_variable_get" id="7o:k,Qg]{+COqPiuo!v_">
+                                        <field name="VAR">global USID</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block type="component_set_get" id="Thz/#[c[2~_uPN?I.VJ8">
+                                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="occupation"></mutation>
+                                        <field name="COMPONENT_SELECTOR">occupation</field>
+                                        <field name="PROP">Text</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_method" id="^adk[T1stQ%A_mH`c$j)">
+                                        <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                        <value name="ARG0">
+                                          <block type="lexical_variable_get" id="NF;3u5/[(n[NZx|rQAbj">
+                                            <field name="VAR">global USID</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block type="lexical_variable_get" id="gk8$7UlHgMGOI9H#s7S}">
+                                            <field name="VAR">global reltn</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="component_method" id="p4G9|V4{E4/d6%UOB^yI">
+                                            <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                            <value name="ARG0">
+                                              <block type="lexical_variable_get" id="gMO.qgx4$e3{@.FoNd:)">
+                                                <field name="VAR">global USID</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block type="component_set_get" id="D$2sIyT/ONy0+q,]LQY*">
+                                                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="user_desc"></mutation>
+                                                <field name="COMPONENT_SELECTOR">user_desc</field>
+                                                <field name="PROP">Text</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="component_method" id="P?`4Ml=yg5Zk1Ml/VDAW">
+                                                <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                                <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                                <value name="ARG0">
+                                                  <block type="lexical_variable_get" id="Vx8gJo_4y=aek_Boj_pC">
+                                                    <field name="VAR">global USID</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block type="component_set_get" id="rJ`y@zp.LMIIB%b@;7cb">
+                                                    <mutation component_type="ListPicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="area_pick"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">area_pick</field>
+                                                    <field name="PROP">Selection</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="component_method" id="mW$Q+$rYem;hW-%wb90-">
+                                                    <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                                    <value name="ARG0">
+                                                      <block type="lexical_variable_get" id="JV@OkLOV:UWko8$7dhF{">
+                                                        <field name="VAR">global USID</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG1">
+                                                      <block type="component_set_get" id="L}4)@`;tejaKhna545f]">
+                                                        <mutation component_type="Ratingbar" set_or_get="get" property_name="GetRating" is_generic="false" instance_name="Rating_Bar1"></mutation>
+                                                        <field name="COMPONENT_SELECTOR">Rating_Bar1</field>
+                                                        <field name="PROP">GetRating</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="component_method" id=":`kz:$P#AhCtFSZMrypv">
+                                                        <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                                        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                                        <value name="ARG0">
+                                                          <block type="lexical_variable_get" id="K]`p]0-u(FbB4vor,d99">
+                                                            <field name="VAR">global USID</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG1">
+                                                          <block type="component_set_get" id="jFFFsJ[?=1aj:8?W6YgH">
+                                                            <mutation component_type="Ratingbar" set_or_get="get" property_name="GetRating" is_generic="false" instance_name="Rating_Bar2"></mutation>
+                                                            <field name="COMPONENT_SELECTOR">Rating_Bar2</field>
+                                                            <field name="PROP">GetRating</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="component_method" id="x(cf17[y]vWS[:9_l@(u">
+                                                            <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                                            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                                            <value name="ARG0">
+                                                              <block type="lexical_variable_get" id="gae6cTX.1lv:12IWet1g">
+                                                                <field name="VAR">global USID</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="ARG1">
+                                                              <block type="component_set_get" id="6EkL(m8S20/{#K~lcNhC">
+                                                                <mutation component_type="Ratingbar" set_or_get="get" property_name="GetRating" is_generic="false" instance_name="Rating_Bar3"></mutation>
+                                                                <field name="COMPONENT_SELECTOR">Rating_Bar3</field>
+                                                                <field name="PROP">GetRating</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="component_method" id="bE@MD}h2a+zYQIQQ8)s0">
+                                                                <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                                                <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                                                <value name="ARG0">
+                                                                  <block type="lexical_variable_get" id=";hkReF=syeoR1Eu,3:by">
+                                                                    <field name="VAR">global USID</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="ARG1">
+                                                                  <block type="component_set_get" id="x$iIebnDsmU1Cr0H^,)S">
+                                                                    <mutation component_type="Ratingbar" set_or_get="get" property_name="GetRating" is_generic="false" instance_name="Rating_Bar4"></mutation>
+                                                                    <field name="COMPONENT_SELECTOR">Rating_Bar4</field>
+                                                                    <field name="PROP">GetRating</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="component_method" id="_epqb[z{m`4%%au-c:4R">
+                                                                    <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                                                    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                                                    <value name="ARG0">
+                                                                      <block type="lexical_variable_get" id="yC,J[pIX4b_sWdB|.pbY">
+                                                                        <field name="VAR">global USID</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="ARG1">
+                                                                      <block type="component_set_get" id="gfL:yBE;_e{kUOL0*m#x">
+                                                                        <mutation component_type="Ratingbar" set_or_get="get" property_name="GetRating" is_generic="false" instance_name="Rating_Bar5"></mutation>
+                                                                        <field name="COMPONENT_SELECTOR">Rating_Bar5</field>
+                                                                        <field name="PROP">GetRating</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="component_method" id="m#pt~[JsdB+{Bw1)O~OB">
+                                                                        <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                                                        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                                                        <value name="ARG0">
+                                                                          <block type="lexical_variable_get" id="hG#vP7kc%_o=;[cVhS/Z">
+                                                                            <field name="VAR">global USID</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG1">
+                                                                          <block type="component_set_get" id="l@Y!I@vZYGjhd^p?[BL8">
+                                                                            <mutation component_type="Ratingbar" set_or_get="get" property_name="GetRating" is_generic="false" instance_name="Rating_Bar6"></mutation>
+                                                                            <field name="COMPONENT_SELECTOR">Rating_Bar6</field>
+                                                                            <field name="PROP">GetRating</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="component_method" id="^UCp3,:w6+QON5iM=R.U">
+                                                                            <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                                                            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                                                            <value name="ARG0">
+                                                                              <block type="lexical_variable_get" id="mRF(=|77nHwz);L?kV_=">
+                                                                                <field name="VAR">global USID</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG1">
+                                                                              <block type="component_set_get" id="-S$`nrG2/UYm%@z@M}1X">
+                                                                                <mutation component_type="Ratingbar" set_or_get="get" property_name="GetRating" is_generic="false" instance_name="Rating_Bar7"></mutation>
+                                                                                <field name="COMPONENT_SELECTOR">Rating_Bar7</field>
+                                                                                <field name="PROP">GetRating</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="component_method" id="r)QXwYw#O[trxrj%);Kt">
+                                                                                <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                                                                                <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                                                                                <value name="ARG0">
+                                                                                  <block type="lexical_variable_get" id="~o,{?,54s;5|pF;Olq4H">
+                                                                                    <field name="VAR">global USID</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG1">
+                                                                                  <block type="lexical_variable_get" id="~OdB!P,b-zfH*$WFp=vA">
+                                                                                    <field name="VAR">global persontype</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="controls_openAnotherScreenWithStartValue" id="@WtuvD{C+doKnGgxj^x2">
+                                                                                    <value name="SCREENNAME">
+                                                                                      <block type="text" id=":J`$G62*eq-#Sh9?Am0z">
+                                                                                        <field name="TEXT">Home</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="STARTVALUE">
+                                                                                      <block type="lexical_variable_get" id="LdYM)^VxaI]D#!lo*P56">
+                                                                                        <field name="VAR">global USID</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="controls_if" id="KzX9*{pvNl:g`$G/Ld[*" x="-42" y="3070"></block>
+  <block type="component_event" id="-V9wKh^}+4nvYXJ|H5oC" x="-570" y="3610">
+    <mutation component_type="DatePicker" is_generic="false" instance_name="datemove_pick" event_name="AfterDateSet"></mutation>
+    <field name="COMPONENT_SELECTOR">datemove_pick</field>
+    <statement name="DO">
+      <block type="component_set_get" id="=ntSD[gno={Y086w@b2I">
+        <mutation component_type="DatePicker" set_or_get="set" property_name="Text" is_generic="false" instance_name="datemove_pick"></mutation>
+        <field name="COMPONENT_SELECTOR">datemove_pick</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="eq]4rgN$wz1sDF*?_3|6">
+            <mutation component_type="DatePicker" set_or_get="get" property_name="MonthInText" is_generic="false" instance_name="datemove_pick"></mutation>
+            <field name="COMPONENT_SELECTOR">datemove_pick</field>
+            <field name="PROP">MonthInText</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="L0CGMp(*?,c`WjFy1,rB" x="-550" y="3730">
+    <mutation component_type="ListPicker" is_generic="false" instance_name="area_pick" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">area_pick</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Y$2r{/f:81dGW8z|-vJ?">
+        <mutation component_type="ListPicker" set_or_get="set" property_name="Text" is_generic="false" instance_name="area_pick"></mutation>
+        <field name="COMPONENT_SELECTOR">area_pick</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="04n1)fU(gX=3Bky!yt^;">
+            <mutation component_type="ListPicker" set_or_get="get" property_name="Text" is_generic="false" instance_name="area_pick"></mutation>
+            <field name="COMPONENT_SELECTOR">area_pick</field>
+            <field name="PROP">Text</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="q]TfOw#pHlI-VU1E;G,b" x="-752" y="4588">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="rd_quaterly" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">rd_quaterly</field>
+    <statement name="DO">
+      <block type="controls_if" id="z.}j-ZqdqxA5Ltmc2UDH">
+        <value name="IF0">
+          <block type="lexical_variable_get" id=":.X_RyZ8a]!f`_U%to4K">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="m?Q!MpgJp[4L!@xmz^(~">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_monthly"></mutation>
+            <field name="COMPONENT_SELECTOR">rd_monthly</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="_81~_[bWH}Fj$-UvpRcB">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="IGk/#.ANC/WELV:/^!T#">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_6month"></mutation>
+                <field name="COMPONENT_SELECTOR">rd_6month</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="V59(kI]HCNA:_;F=2hYv">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="p^B5x!?{/+;5xsE8r`xk">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_year"></mutation>
+                    <field name="COMPONENT_SELECTOR">rd_year</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="dSRy_zJQ;-CCC7yXz53Z">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="EWGZ:(?^{^bCVgmK+UPR">
+                        <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_other"></mutation>
+                        <field name="COMPONENT_SELECTOR">rd_other</field>
+                        <field name="PROP">Checked</field>
+                        <value name="VALUE">
+                          <block type="logic_false" id="hU=#`%0y0;tkfux]ZVbT">
+                            <field name="BOOL">FALSE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lexical_variable_set" id="M~2;|Kq}XogY}UI$1cZe">
+                            <field name="VAR">global lease</field>
+                            <value name="VALUE">
+                              <block type="component_set_get" id="ojvQ6-(TwH%Qd8,cwL9[">
+                                <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="rd_quaterly"></mutation>
+                                <field name="COMPONENT_SELECTOR">rd_quaterly</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="#lv0{H2_J|e]l]{@!jno" x="-290" y="4588">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="introvert" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">introvert</field>
+    <statement name="DO">
+      <block type="controls_if" id="y?Ne146m8{%{Qp^C!ug*">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="n*NZI8yg%`d$_b9*8s/]">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="c,$3CwONyTt{279)/u_x">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="PR"></mutation>
+            <field name="COMPONENT_SELECTOR">PR</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="m8J9Q{yUE7O1zQw*j_C-">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="9pNDJpcH;wqwJ`z6M6^W">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="indep"></mutation>
+                <field name="COMPONENT_SELECTOR">indep</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="mCvKXZ}xu)E:qMQ%*Su[">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="Ugl04LQ|j`Yl%(gr/H1E">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="introvert"></mutation>
+                    <field name="COMPONENT_SELECTOR">introvert</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="T+2`Wj{IY*,2ElownP*u">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="uq#0HxkO7h|!;HATI5(g">
+                        <field name="VAR">global persontype</field>
+                        <value name="VALUE">
+                          <block type="component_set_get" id="=My;WYjNga^KRFW5oqk8">
+                            <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="introvert"></mutation>
+                            <field name="COMPONENT_SELECTOR">introvert</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="hQma*_~{Y]!;Nw=A{]XI" x="189" y="4588">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="rd_6month" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">rd_6month</field>
+    <statement name="DO">
+      <block type="controls_if" id="_9Il_M)EMS,b)@$0vcPh">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="^TN+6*C/l[PM%9y7lc:_">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="x{b=qNVO$[M}Nj~s~%[S">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_other"></mutation>
+            <field name="COMPONENT_SELECTOR">rd_other</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id=".3N6Ub+%5]K5L1Vu/*.c">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="VPzy),n(v3Rz]/8]zz9y">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_quaterly"></mutation>
+                <field name="COMPONENT_SELECTOR">rd_quaterly</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="~MXHJgg/f0W.@eZi`F?.">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="T11k:GWAvj.seN=X/O@e">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_year"></mutation>
+                    <field name="COMPONENT_SELECTOR">rd_year</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="Y00yYod|Y@U2q]ddorK_">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="T@NI${_X.#irx2%cj+}I">
+                        <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_monthly"></mutation>
+                        <field name="COMPONENT_SELECTOR">rd_monthly</field>
+                        <field name="PROP">Checked</field>
+                        <value name="VALUE">
+                          <block type="logic_false" id="+a?G=|{WQ#m?Y7U]=##:">
+                            <field name="BOOL">FALSE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lexical_variable_set" id="]1iMMlr7]_-cFo?61M0/">
+                            <field name="VAR">global lease</field>
+                            <value name="VALUE">
+                              <block type="component_set_get" id="^KGr]*DTMcNA%9IHpC/G">
+                                <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="rd_6month"></mutation>
+                                <field name="COMPONENT_SELECTOR">rd_6month</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="z]??~$v%|nZO{kImD`cw" x="-752" y="4848">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="social" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">social</field>
+    <statement name="DO">
+      <block type="controls_if" id="IIK2qTM|3bBJ0vweYS=c">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="O}O$|gd~cp0v_q/YH*-6">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="a^vM_2[$YoBOw8dI+UpF">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="PR"></mutation>
+            <field name="COMPONENT_SELECTOR">PR</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="KqIdi}24[{HnYTZg]B,4">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="5|h=A,=37U~Bu.du2ig$">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="indep"></mutation>
+                <field name="COMPONENT_SELECTOR">indep</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="7lyp*bS|kT;v_/g`Z|7$">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="1PU30k6z%D4-no9#qo+;">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="introvert"></mutation>
+                    <field name="COMPONENT_SELECTOR">introvert</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="=r@dIIFa.][;J#3pv0bt">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="E910}F]E0y;L,-ltHoYB">
+                        <field name="VAR">global persontype</field>
+                        <value name="VALUE">
+                          <block type="component_set_get" id="KeX4qgh?F9{^Re)ZOnl2">
+                            <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="social"></mutation>
+                            <field name="COMPONENT_SELECTOR">social</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="v$1ExRww:k=sF6veffd[" x="-288" y="4848">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="rd_other" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">rd_other</field>
+    <statement name="DO">
+      <block type="controls_if" id="XTJTFIo0y,Ney|nnCnLd">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="Hgue)Hg6W9i@-4SCuy=D">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="#zg)9xcYo!W7,mV|qwce">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_6month"></mutation>
+            <field name="COMPONENT_SELECTOR">rd_6month</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="x54Ph3EDK,bAO4|!}X?@">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="A:AOV-`JHO3YmVJ3Vr@z">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_quaterly"></mutation>
+                <field name="COMPONENT_SELECTOR">rd_quaterly</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="LU8WF`T$jxP$9=1#XiQ{">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="]{EYFY-A_s~gh2KdeiBe">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_year"></mutation>
+                    <field name="COMPONENT_SELECTOR">rd_year</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="0A[x!EZm63SL.LymoWLQ">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="FB5d@]WBLIGWqsFRmn-n">
+                        <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_monthly"></mutation>
+                        <field name="COMPONENT_SELECTOR">rd_monthly</field>
+                        <field name="PROP">Checked</field>
+                        <value name="VALUE">
+                          <block type="logic_false" id="?5[R2Z|KH-|sa^b_ti=K">
+                            <field name="BOOL">FALSE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lexical_variable_set" id="Z.dj_Hc@YS3H|L{~mLj?">
+                            <field name="VAR">global lease</field>
+                            <value name="VALUE">
+                              <block type="component_set_get" id="S#=zd@W^[7-+kPRXog];">
+                                <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="rd_other"></mutation>
+                                <field name="COMPONENT_SELECTOR">rd_other</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="alR(=azT,|BO}ouW7z%m" x="166" y="4848">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="PR" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">PR</field>
+    <statement name="DO">
+      <block type="controls_if" id="%)fsU{`OAjyE`PBgMa]*">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="035yv~*qUXmN};{PLX/~">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="lmq_`X-n=UVVZ^woW3@H">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="social"></mutation>
+            <field name="COMPONENT_SELECTOR">social</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="4R1F+Un=B1S2h~$L|7P,">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="!CpHldC[J@-)GM)m(NS=">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="introvert"></mutation>
+                <field name="COMPONENT_SELECTOR">introvert</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="I$9X!xq$JNpvy8w/sLy{">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="^@|uKF7Gk!HcU5C2I/+:">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="indep"></mutation>
+                    <field name="COMPONENT_SELECTOR">indep</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="QSX~P|z(FW?5fG1ykg}T">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="fh={XmQT!oaboEIR)xpg">
+                        <field name="VAR">global persontype</field>
+                        <value name="VALUE">
+                          <block type="component_set_get" id="6D@jQ;XWe+RDnPK59Q[S">
+                            <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="PR"></mutation>
+                            <field name="COMPONENT_SELECTOR">PR</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="xS|@Ho2JIK*mtKj.T0`r" x="-752" y="5108">
+    <mutation component_type="Slider" is_generic="false" instance_name="budget_slide" event_name="PositionChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">budget_slide</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Lu+IRp!?Q+_X3)LWu/=@">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Value"></mutation>
+        <field name="COMPONENT_SELECTOR">Value</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="lexical_variable_get" id="47bEAA()5wKV?)dx[UZh">
+            <mutation>
+              <eventparam name="thumbPosition"></eventparam>
+            </mutation>
+            <field name="VAR">thumb Position</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Hn_n%FcDB+ke;/eA$5Xl" x="-318" y="5108">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="indep" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">indep</field>
+    <statement name="DO">
+      <block type="controls_if" id="qGwX)s?kJDZvGNyG,7s!">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="]L[h~yeaG9i7G{/qrF4@">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="2#FMNjT|PjVy^7l%?5.`">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="social"></mutation>
+            <field name="COMPONENT_SELECTOR">social</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="Bz.?5(U(Yw?Ws;(X%~s0">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="Ch*QrAyl?k/#MZlm^79]">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="introvert"></mutation>
+                <field name="COMPONENT_SELECTOR">introvert</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="3wNaa[Dky%@EtGN!_yE(">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="`*|J{.E::po$Ru-CdknJ">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="PR"></mutation>
+                    <field name="COMPONENT_SELECTOR">PR</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id="yr8bq_}n}OZdk=I2fY|5">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="lexical_variable_set" id="FwkXGu%QVlNyPFj~O_XT">
+                        <field name="VAR">global persontype</field>
+                        <value name="VALUE">
+                          <block type="component_set_get" id="NKRW*1;W{enomD:Xi@jQ">
+                            <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="indep"></mutation>
+                            <field name="COMPONENT_SELECTOR">indep</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="%TpCP6|!X6|_VyrioCpl" x="144" y="5108">
+    <mutation component_type="Radiobutton" is_generic="false" instance_name="rd_year" event_name="Changed"></mutation>
+    <field name="COMPONENT_SELECTOR">rd_year</field>
+    <statement name="DO">
+      <block type="controls_if" id="28{K9BP5{,KZ*u50Zd}}">
+        <value name="IF0">
+          <block type="lexical_variable_get" id="roBKpwK@MT1qUN|;B5-}">
+            <mutation>
+              <eventparam name="checked"></eventparam>
+            </mutation>
+            <field name="VAR">checked</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="G6Y1:Xt{;.)N@U|!-YNQ">
+            <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_6month"></mutation>
+            <field name="COMPONENT_SELECTOR">rd_6month</field>
+            <field name="PROP">Checked</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="GqY8(Q2/m4*U;?!@Xolt">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="[+}V:@j-dVP*4wyKqdT4">
+                <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_quaterly"></mutation>
+                <field name="COMPONENT_SELECTOR">rd_quaterly</field>
+                <field name="PROP">Checked</field>
+                <value name="VALUE">
+                  <block type="logic_false" id="(,aJ(5np`EuwPQ/+Eb;1">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="f)95V=[nxQqIPvF{;,/N">
+                    <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_other"></mutation>
+                    <field name="COMPONENT_SELECTOR">rd_other</field>
+                    <field name="PROP">Checked</field>
+                    <value name="VALUE">
+                      <block type="logic_false" id=".lkJ_xYq,FwbYtDS%y95">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="K8?(rC,9V2s^qLq(Db,R">
+                        <mutation component_type="Radiobutton" set_or_get="set" property_name="Checked" is_generic="false" instance_name="rd_monthly"></mutation>
+                        <field name="COMPONENT_SELECTOR">rd_monthly</field>
+                        <field name="PROP">Checked</field>
+                        <value name="VALUE">
+                          <block type="logic_false" id=")1L{N_~OK9w_CDZfbdH~">
+                            <field name="BOOL">FALSE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lexical_variable_set" id="O8$w~.Hh?x]3GJ:Y;1Z9">
+                            <field name="VAR">global lease</field>
+                            <value name="VALUE">
+                              <block type="component_set_get" id="jR$T1g=pJ%}A~668D?Dn">
+                                <mutation component_type="Radiobutton" set_or_get="get" property_name="Text" is_generic="false" instance_name="rd_year"></mutation>
+                                <field name="COMPONENT_SELECTOR">rd_year</field>
+                                <field name="PROP">Text</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="Rsu(qC=Y(ZeZandp1Lh," x="-752" y="5368">
+    <field name="NAME">cityval</field>
+    <value name="VALUE">
+      <block type="text" id="k9Mhfwhgg7?8=8gWEPb:">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="95*P/:p^nDbgPXgWMg$a" x="-476" y="5368">
+    <field name="NAME">ageval</field>
+    <value name="VALUE">
+      <block type="text" id="#UGwR=e`0=HUo:D`h[V+">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="/k+|1.Y0x0,;n:`}NlmS" x="-197" y="5368">
+    <field name="NAME">budget</field>
+    <value name="VALUE">
+      <block type="text" id="kO]D~61Iv+P,N:qc;e)6">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="yyTef-.6cQr|/]DS[BZy" x="83" y="5368">
+    <field name="NAME">month</field>
+    <value name="VALUE">
+      <block type="text" id="1?it?L@$(|4s#PfPS8Bx">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="lexical_variable_set" id="6g=f;Ol65@=+1R4jqbc/" x="-752" y="5421">
+    <field name="VAR">global cityval</field>
+    <value name="VALUE">
+      <block type="component_set_get" id="=zf(JC1AEMY:{v]3DT=d">
+        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="city"></mutation>
+        <field name="COMPONENT_SELECTOR">city</field>
+        <field name="PROP">Text</field>
+      </block>
+    </value>
+    <next>
+      <block type="lexical_variable_set" id="R=kL]849sa80)F{KsKG$">
+        <field name="VAR">global ageval</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="BL,mt)CxhtQYCv+dt;U(">
+            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="age"></mutation>
+            <field name="COMPONENT_SELECTOR">age</field>
+            <field name="PROP">Text</field>
+          </block>
+        </value>
+        <next>
+          <block type="lexical_variable_set" id="ee?w_uyWT:fOqKi/ZTXI">
+            <field name="VAR">global budget</field>
+            <value name="VALUE">
+              <block type="component_set_get" id="*AxLDJ|SQ4ha!fv=m$x-">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Value"></mutation>
+                <field name="COMPONENT_SELECTOR">Value</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <next>
+              <block type="lexical_variable_set" id="0^Q]pybueyJ?OV0#wM{_">
+                <field name="VAR">global month</field>
+                <value name="VALUE">
+                  <block type="component_set_get" id="KLi/jKnX:|HwBRAO]52F">
+                    <mutation component_type="DatePicker" set_or_get="get" property_name="MonthInText" is_generic="false" instance_name="datemove_pick"></mutation>
+                    <field name="COMPONENT_SELECTOR">datemove_pick</field>
+                    <field name="PROP">MonthInText</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="O%=B01;OE|.Gq:.lD3}s">
+                    <field name="VAR">global userdesc</field>
+                    <value name="VALUE">
+                      <block type="component_set_get" id="#zG+tAE=5TLsagu24h{,">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="user_desc"></mutation>
+                        <field name="COMPONENT_SELECTOR">user_desc</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="global_declaration" id="i{[t~{Xgq!jF,p~foKfd" x="359" y="5368">
+    <field name="NAME">userdesc</field>
+    <value name="VALUE">
+      <block type="text" id="/Mt9PY/l@8`w3giu~.kd">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <yacodeblocks ya-version="206" language-version="26"></yacodeblocks>
+</xml>

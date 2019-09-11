@@ -1,0 +1,154 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="+04d#[X{|L)t4^{~++j_" x="-790" y="-2430">
+    <field name="NAME">UID</field>
+    <value name="VALUE">
+      <block type="controls_getStartValue" id="D*Exaa!`AemLyZLfd`R!"></block>
+    </value>
+  </block>
+  <block type="component_event" id="7^Ag$]?cjkh/#biAW7d[" x="-790" y="-2350">
+    <mutation component_type="Slider" is_generic="false" instance_name="Slider1" event_name="PositionChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">Slider1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="rE#Pv!^a*pJIs,~AOz/w">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="obudmax"></mutation>
+        <field name="COMPONENT_SELECTOR">obudmax</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="@wKU!o|H[djpwtebd}DQ">
+            <mutation component_type="Slider" set_or_get="get" property_name="ThumbPosition" is_generic="false" instance_name="Slider1"></mutation>
+            <field name="COMPONENT_SELECTOR">Slider1</field>
+            <field name="PROP">ThumbPosition</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="NwS~)aFD1Z]9OIhIOd,v" x="-790" y="-2190">
+    <mutation component_type="ImagePicker" is_generic="false" instance_name="Image_Picker2" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">Image_Picker2</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Yw8.oayQ_@cG]/?hNsbM">
+        <mutation component_type="ImagePicker" set_or_get="set" property_name="Image" is_generic="false" instance_name="Image_Picker2"></mutation>
+        <field name="COMPONENT_SELECTOR">Image_Picker2</field>
+        <field name="PROP">Image</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="5g/6W:F`ml+~~oUQ:LI!">
+            <mutation component_type="ImagePicker" set_or_get="get" property_name="Selection" is_generic="false" instance_name="Image_Picker2"></mutation>
+            <field name="COMPONENT_SELECTOR">Image_Picker2</field>
+            <field name="PROP">Selection</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="NR02~]z,1oMHC/~t4h_H" x="-790" y="-2050">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_Submit" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_Submit</field>
+    <statement name="DO">
+      <block type="component_set_get" id="fTe)6H4h)ST=l4GM[kFb">
+        <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+        <field name="PROP">ProjectBucket</field>
+        <value name="VALUE">
+          <block type="text" id="TByL{b{{mVCB00|}a$]{">
+            <field name="TEXT">Rooms</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="J0nT%n__0bUlV)CTxf1]">
+            <mutation component_type="FirebaseDB" method_name="StoreValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+            <value name="ARG0">
+              <block type="controls_getStartValue" id="jv%yB~byf(}%.,!oMSG|"></block>
+            </value>
+            <value name="ARG1">
+              <block type="lists_create_with" id="r%Rf^~x{#HTJ7dAhs|Bi">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="component_set_get" id="brw8o#rev)B(YGhR/Vo)">
+                    <mutation component_type="Slider" set_or_get="get" property_name="ThumbPosition" is_generic="false" instance_name="Slider1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Slider1</field>
+                    <field name="PROP">ThumbPosition</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="component_set_get" id="g}+_/=Y3(ls,Ho_?f[_k">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="oadrss"></mutation>
+                    <field name="COMPONENT_SELECTOR">oadrss</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="component_set_get" id="XH!$_D%W-gL^z0-KFUdJ">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="odetails"></mutation>
+                    <field name="COMPONENT_SELECTOR">odetails</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="l9vSjT5USMte,:J$]c#D">
+                <mutation component_type="FirebaseStorage" method_name="UploadPhoto" is_generic="false" instance_name="FirebaseStorage1"></mutation>
+                <field name="COMPONENT_SELECTOR">FirebaseStorage1</field>
+                <value name="ARG0">
+                  <block type="controls_getStartValue" id="Bn,nK?gv;l:_jm~T5TB-"></block>
+                </value>
+                <value name="ARG1">
+                  <block type="component_set_get" id="_-OJ5_,=T{H,w?aJ73{A">
+                    <mutation component_type="ImagePicker" set_or_get="get" property_name="Image" is_generic="false" instance_name="Image_Picker2"></mutation>
+                    <field name="COMPONENT_SELECTOR">Image_Picker2</field>
+                    <field name="PROP">Image</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="it)S]e4jilFGp!{c#NPj" x="-770" y="-1730">
+    <mutation component_type="FirebaseStorage" is_generic="false" instance_name="FirebaseStorage1" event_name="Response"></mutation>
+    <field name="COMPONENT_SELECTOR">FirebaseStorage1</field>
+    <statement name="DO">
+      <block type="component_method" id="}8AnBAyxHTX[=bA?bzO`">
+        <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+        <value name="ARG0">
+          <block type="controls_getStartValue" id="Z(8Cscac6Q5QWlAuu[I%"></block>
+        </value>
+        <value name="ARG1">
+          <block type="lexical_variable_get" id="E78HT}kR0~DPL?M(S-EY">
+            <mutation>
+              <eventparam name="downloadUrl"></eventparam>
+            </mutation>
+            <field name="VAR">downloadUrl</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="awYJ5ZqBd5cw^rgan|-y">
+            <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="@U7q:U_t3+6KJJa$Q#F[">
+                <field name="TEXT">Room details uploaded</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="BerZ[=gL+T0!6WTY-[AW">
+                <field name="TEXT">Successful</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="text" id="@9dVk5cA#d~o`=vt3OY1">
+                <field name="TEXT">OK</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="206" language-version="26"></yacodeblocks>
+</xml>

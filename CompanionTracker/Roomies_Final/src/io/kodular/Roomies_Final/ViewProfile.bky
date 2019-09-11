@@ -1,0 +1,711 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="7nr6]tR=aDC^Rz{Wtfti" x="-170" y="-530">
+    <mutation component_type="KodularLottie" is_generic="false" instance_name="Lottie1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Lottie1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="~v8V!+8uv[5Y.v.GR{a1">
+        <mutation component_type="KodularLottie" set_or_get="set" property_name="Source" is_generic="false" instance_name="Lottie1"></mutation>
+        <field name="COMPONENT_SELECTOR">Lottie1</field>
+        <field name="PROP">Source</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="4I3_tmioK}H/9.ye:;GI">
+            <mutation component_type="KodularLottie" set_or_get="get" property_name="Source" is_generic="false" instance_name="Lottie1"></mutation>
+            <field name="COMPONENT_SELECTOR">Lottie1</field>
+            <field name="PROP">Source</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreenWithStartValue" id="ile(5BaSd%onTI-F-l8^">
+            <value name="SCREENNAME">
+              <block type="text" id="uy76CGUv!;$h)$mk~}``">
+                <field name="TEXT">Chat</field>
+              </block>
+            </value>
+            <value name="STARTVALUE">
+              <block type="lists_create_with" id="?WD`jlk6gk|Wd3;sEKp(">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="lexical_variable_get" id="vP@7vZ%MWDHa#C^_u@n_">
+                    <field name="VAR">global CurrentUser</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="lexical_variable_get" id="jC_}!FC0DuSh6,V.x(Ra">
+                    <field name="VAR">global Receiver</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="6mpZaT?.xv*3B3U{XD:z" x="50" y="-350">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_Chat" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_Chat</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="Z39H6a,m,]#..;=]]qH7">
+        <value name="SCREENNAME">
+          <block type="text" id="oh=t3IE[E5BF;Rx5vien">
+            <field name="TEXT">Chat</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="lists_create_with" id="-0,v_4W@OjpCQx7#uOER">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="lexical_variable_get" id="q=/cL{^,!CKTy=/smX3j">
+                <field name="VAR">global CurrentUser</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lexical_variable_get" id="%;-xbJsn@o@Gr$J44nCs">
+                <field name="VAR">global Receiver</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="YcUsXpr@udWjgRZDuPV6" x="-590" y="-310">
+    <field name="NAME">Receiver</field>
+    <value name="VALUE">
+      <block type="text" id="L;E!7dS^1@l%VQgVpK5$">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="]G~u(WnwEj9z5){9LQxA" x="-590" y="-270">
+    <field name="NAME">start</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="b~jdm8`QK)1jzVv;er?G">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="6;WPl+YgCxBY`QCbY[Hk" x="-590" y="-210">
+    <field name="NAME">SelectedUser</field>
+    <value name="VALUE">
+      <block type="text" id="z*(;rNoyDv#(VS$Azxa1">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="YQwMNR@^P_!i=Qo/;)ta" x="-590" y="-170">
+    <field name="NAME">CurrentUser</field>
+    <value name="VALUE">
+      <block type="text" id="4j9d~$$B7R3h50eyew]|">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="m_6r6|Z6W|)OJB=9nvXY" x="810" y="-210">
+    <field name="NAME">reject_users</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="mE3f5J.hInXVW4cf?#]-">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="$d}$oL+)NFZ:,{QK.,co" x="130" y="-170">
+    <mutation component_type="Form" is_generic="false" instance_name="ViewProfile" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">ViewProfile</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreenWithStartValue" id="QKF7zWSM{]PPcjeKe[w:">
+        <value name="SCREENNAME">
+          <block type="text" id="dD!wfSyN2_*Q)SoLf9$N">
+            <field name="TEXT">Home</field>
+          </block>
+        </value>
+        <value name="STARTVALUE">
+          <block type="lexical_variable_get" id="$F%~_5}AvBri@9($|rsW">
+            <field name="VAR">global CurrentUser</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="3$QQP*pv~JAoE#Rc7:rT" x="-610" y="-130">
+    <mutation component_type="Form" is_generic="false" instance_name="ViewProfile" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">ViewProfile</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="H0_ks*]iRY0izk`R*;#g">
+        <field name="VAR">global start</field>
+        <value name="VALUE">
+          <block type="controls_getStartValue" id="[2=oHhs{%`=]W30|92KE"></block>
+        </value>
+        <next>
+          <block type="lexical_variable_set" id="YR0:L0-}kb%IFZX*ozGy">
+            <field name="VAR">global CurrentUser</field>
+            <value name="VALUE">
+              <block type="lists_select_item" id="~gu)Ugm*v*,sNuJ%#1]h">
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="|`Dck)WLc?67w~:-%ekh">
+                    <field name="VAR">global start</field>
+                  </block>
+                </value>
+                <value name="NUM">
+                  <block type="math_number" id="c=e*G`.bMXcL;g~u.giS">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="lexical_variable_set" id="h2SNA=/}#co153}1cV:h">
+                <field name="VAR">global SelectedUser</field>
+                <value name="VALUE">
+                  <block type="lists_select_item" id="txYfa1L;zC8`d60P/^QV">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id=").)A/:dG#Z9t9+Fz-j(f">
+                        <field name="VAR">global start</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="math_number" id="x38AR#Bb~S3Nyu)g#_%f">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="mh(rARx8kgW$sgsL)C(S">
+                    <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                    <field name="PROP">ProjectBucket</field>
+                    <value name="VALUE">
+                      <block type="text" id="|[$G$0KBN.Orm./+;g|u">
+                        <field name="TEXT">UserDetails</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="b[SX6P8UzFWO4y~n1OJ?">
+                        <mutation component_type="FirebaseDB" method_name="GetValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                        <value name="ARG0">
+                          <block type="lexical_variable_get" id="UH}O^6|s;[6lL5#i}l.m">
+                            <field name="VAR">global SelectedUser</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="L4wV-{XBGtU`_Y`$Rf6;">
+                            <field name="TEXT"></field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="yN/u@jIA!U];,H]V^-KQ" x="470" y="-50">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_Reject" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_Reject</field>
+    <statement name="DO">
+      <block type="component_set_get" id="(8!YI6+|C!]u{AV?1t|V">
+        <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database2"></mutation>
+        <field name="COMPONENT_SELECTOR">Firebase_Database2</field>
+        <field name="PROP">ProjectBucket</field>
+        <value name="VALUE">
+          <block type="text" id="r=0etDr$q%gg@Od+Cs7g">
+            <field name="TEXT">Rejects</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="~b/JH-yY86$zTZWI1`Ex">
+            <mutation component_type="FirebaseDB" method_name="GetValue" is_generic="false" instance_name="Firebase_Database2"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database2</field>
+            <value name="ARG0">
+              <block type="lexical_variable_get" id="jFv.;|T)R)I?m_emX^Bm">
+                <field name="VAR">global CurrentUser</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="lists_create_with" id=")4ZU{byE3(Sw%xDw}c-L">
+                <mutation items="0"></mutation>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="^]),/s:Y.mE!Ef)*186w" x="470" y="130">
+    <mutation component_type="FirebaseDB" is_generic="false" instance_name="Firebase_Database2" event_name="GotValue"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Database2</field>
+    <statement name="DO">
+      <block type="controls_if" id="L9t][|{(94!wxZ5iz@Ud">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="$@:I}4`)*8FFdO]3VfE@">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lists_length" id=",I,BK-Ny^MuF4+xRnl^z">
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="rY$r0rD6q3E1{foTESTw">
+                    <mutation>
+                      <eventparam name="value"></eventparam>
+                    </mutation>
+                    <field name="VAR">value</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="IsgCyjR!o)dSMQTE#c:;">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="4yqvTIv^8Et7iyl{O]}S">
+            <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database2"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database2</field>
+            <field name="PROP">ProjectBucket</field>
+            <value name="VALUE">
+              <block type="text" id="9Z/RpCQ(nJJ?=dM.FUhW">
+                <field name="TEXT">Rejects</field>
+              </block>
+            </value>
+            <next>
+              <block type="lists_add_items" id="ZR{IJk{T!%5B$ulje@5a">
+                <mutation items="1"></mutation>
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="_*E#O%2@fcZ=rdLwb?o:">
+                    <field name="VAR">global reject_users</field>
+                  </block>
+                </value>
+                <value name="ITEM0">
+                  <block type="lexical_variable_get" id="bP@@+ZL@*T./uE!)^e)k">
+                    <field name="VAR">global SelectedUser</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="dkzGN4!NU[2#LAY(t9/C">
+                    <mutation component_type="FirebaseDB" method_name="StoreValue" is_generic="false" instance_name="Firebase_Database2"></mutation>
+                    <field name="COMPONENT_SELECTOR">Firebase_Database2</field>
+                    <value name="ARG0">
+                      <block type="lexical_variable_get" id="%dIle0Ahmb/_Yi0ota)k">
+                        <field name="VAR">global CurrentUser</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="lexical_variable_get" id="hSI6tS,2s][{:gF((A~x">
+                        <field name="VAR">global reject_users</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="U|/IhFFTnph;?dkBde;R">
+            <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database2"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database2</field>
+            <field name="PROP">ProjectBucket</field>
+            <value name="VALUE">
+              <block type="text" id="SQi*~q2VzkAS.bjQnctl">
+                <field name="TEXT">Rejects</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="CVdDB~z3H}JV`*c%`.2*">
+                <mutation component_type="FirebaseDB" method_name="AppendValue" is_generic="false" instance_name="Firebase_Database2"></mutation>
+                <field name="COMPONENT_SELECTOR">Firebase_Database2</field>
+                <value name="ARG0">
+                  <block type="lexical_variable_get" id="9f}+y%mi-)+4g4`QHL$]">
+                    <field name="VAR">global CurrentUser</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="lexical_variable_get" id="83lf_eWD@a$axNA+5{Ca">
+                    <field name="VAR">global SelectedUser</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_openAnotherScreenWithStartValue" id="W7GEh}ovgn-V@9:i4M1v">
+            <value name="SCREENNAME">
+              <block type="text" id="+~1qOEp5Y[rU*w_.`:Fm">
+                <field name="TEXT">Home</field>
+              </block>
+            </value>
+            <value name="STARTVALUE">
+              <block type="lexical_variable_get" id="MYSQDi^I-U#M9P^Y_xv/">
+                <field name="VAR">global CurrentUser</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="|s0~5=jRqg^%_OV46;_)" x="-210" y="170">
+    <mutation component_type="FirebaseDB" is_generic="false" instance_name="Firebase_Database1" event_name="GotValue"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+    <statement name="DO">
+      <block type="component_set_get" id=":vU3C{B.{}GR6C)`HETz">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_Name"></mutation>
+        <field name="COMPONENT_SELECTOR">txt_Name</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="lists_select_item" id="iR@x+MJ5fsbYnT|)WRQZ">
+            <value name="LIST">
+              <block type="lexical_variable_get" id="(a+*0OpEGIdfRICGb%Tt">
+                <mutation>
+                  <eventparam name="value"></eventparam>
+                </mutation>
+                <field name="VAR">value</field>
+              </block>
+            </value>
+            <value name="NUM">
+              <block type="math_number" id="-sHDIiKT;|Z67P%ZfAD.">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="lexical_variable_set" id="GFI^j#,@(GBBd@WPU7iX">
+            <field name="VAR">global Receiver</field>
+            <value name="VALUE">
+              <block type="lists_select_item" id="AF$J?8]#mC[zE^NX*2H3">
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="+Ruv1=gym/m;((A[YOLD">
+                    <mutation>
+                      <eventparam name="value"></eventparam>
+                    </mutation>
+                    <field name="VAR">value</field>
+                  </block>
+                </value>
+                <value name="NUM">
+                  <block type="math_number" id="Q}VN1$XD*y@!,?lTg1Wt">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="1JGJWNVtRYHU}TlJl:%H">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_Age"></mutation>
+                <field name="COMPONENT_SELECTOR">txt_Age</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="lists_select_item" id="Mc|2pA.Rsie*o@N^8jaV">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id=";$|pbi(1sQG.*IT=EX}=">
+                        <mutation>
+                          <eventparam name="value"></eventparam>
+                        </mutation>
+                        <field name="VAR">value</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="math_number" id="7lylgR_{x]?nvERv-)d`">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="@$/A|B9S6Ji_k[B^iKe6">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_description"></mutation>
+                    <field name="COMPONENT_SELECTOR">txt_description</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="lists_select_item" id="^D},H[`Ty`#S/|83.sRw">
+                        <value name="LIST">
+                          <block type="lexical_variable_get" id="k83f#?nk%(cM+JyL9A,.">
+                            <mutation>
+                              <eventparam name="value"></eventparam>
+                            </mutation>
+                            <field name="VAR">value</field>
+                          </block>
+                        </value>
+                        <value name="NUM">
+                          <block type="math_number" id=".*{8a325/XP}+2siVx$T">
+                            <field name="NUM">12</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="De7@AyO^Z@J~FR#:hlJ@">
+                        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_occupation"></mutation>
+                        <field name="COMPONENT_SELECTOR">txt_occupation</field>
+                        <field name="PROP">Text</field>
+                        <value name="VALUE">
+                          <block type="lists_select_item" id="Sw{,@Wzu#C#M00E/oQv7">
+                            <value name="LIST">
+                              <block type="lexical_variable_get" id="KeXA*CN,x)|1orhT+eEp">
+                                <mutation>
+                                  <eventparam name="value"></eventparam>
+                                </mutation>
+                                <field name="VAR">value</field>
+                              </block>
+                            </value>
+                            <value name="NUM">
+                              <block type="math_number" id="oWE/v!L0..JKhNQ8l3%=">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_set_get" id="+chkDvgVH2k{enZiV%S!">
+                            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="lbl_budget"></mutation>
+                            <field name="COMPONENT_SELECTOR">lbl_budget</field>
+                            <field name="PROP">Text</field>
+                            <value name="VALUE">
+                              <block type="text_join" id="4ISt15Ue}3)!4BmoNn~:">
+                                <mutation items="2"></mutation>
+                                <value name="ADD0">
+                                  <block type="lists_select_item" id="_X8?wkJ+_P)Hrji[7Bv1">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id="A9v:|_C:GA@0Vkrez0]0">
+                                        <mutation>
+                                          <eventparam name="value"></eventparam>
+                                        </mutation>
+                                        <field name="VAR">value</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <block type="math_number" id="eA8=cZiR)De)pqI=!zXl">
+                                        <field name="NUM">7</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block type="text" id="Vx`SXY903Dsw1$Q4xXLp">
+                                    <field name="TEXT">$ per month</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="component_set_get" id="?`ijb9vj{Q4OATE:?1R$">
+                                <mutation component_type="Ratingbar" set_or_get="set" property_name="SetRating" is_generic="false" instance_name="rtng_Clean"></mutation>
+                                <field name="COMPONENT_SELECTOR">rtng_Clean</field>
+                                <field name="PROP">SetRating</field>
+                                <value name="VALUE">
+                                  <block type="lists_select_item" id="^@#^GNwHvglDwho7Cr@C">
+                                    <value name="LIST">
+                                      <block type="lexical_variable_get" id=",mc0wG(nVPOxH-U`FE1Y">
+                                        <mutation>
+                                          <eventparam name="value"></eventparam>
+                                        </mutation>
+                                        <field name="VAR">value</field>
+                                      </block>
+                                    </value>
+                                    <value name="NUM">
+                                      <block type="math_number" id="[p-Nz3@J4A/4($L7(Ex)">
+                                        <field name="NUM">14</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_set_get" id="Re,s#*R5A?38NJw{msMT">
+                                    <mutation component_type="Ratingbar" set_or_get="set" property_name="SetRating" is_generic="false" instance_name="rtng_Work"></mutation>
+                                    <field name="COMPONENT_SELECTOR">rtng_Work</field>
+                                    <field name="PROP">SetRating</field>
+                                    <value name="VALUE">
+                                      <block type="lists_select_item" id=",A_)S18qxFI[!^*Niqq4">
+                                        <value name="LIST">
+                                          <block type="lexical_variable_get" id="n9A].~d[Ih@)pihzgR?G">
+                                            <mutation>
+                                              <eventparam name="value"></eventparam>
+                                            </mutation>
+                                            <field name="VAR">value</field>
+                                          </block>
+                                        </value>
+                                        <value name="NUM">
+                                          <block type="math_number" id="I0hP/|id^):ecdfFE/a4">
+                                            <field name="NUM">15</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_set_get" id="Ty}L9n?(MxU$8k5x3.(z">
+                                        <mutation component_type="Ratingbar" set_or_get="set" property_name="SetRating" is_generic="false" instance_name="rtng_sleep"></mutation>
+                                        <field name="COMPONENT_SELECTOR">rtng_sleep</field>
+                                        <field name="PROP">SetRating</field>
+                                        <value name="VALUE">
+                                          <block type="lists_select_item" id="1.;SMCVHAr!28yfW^0)%">
+                                            <value name="LIST">
+                                              <block type="lexical_variable_get" id="E;2)do?OBkq+HdU1J:e+">
+                                                <mutation>
+                                                  <eventparam name="value"></eventparam>
+                                                </mutation>
+                                                <field name="VAR">value</field>
+                                              </block>
+                                            </value>
+                                            <value name="NUM">
+                                              <block type="math_number" id="K?nbqeRS+`Sm5HXxENXZ">
+                                                <field name="NUM">16</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="component_set_get" id="JWWyC;])@wl*$hX;}zIL">
+                                            <mutation component_type="Ratingbar" set_or_get="set" property_name="SetRating" is_generic="false" instance_name="rtng_smoke"></mutation>
+                                            <field name="COMPONENT_SELECTOR">rtng_smoke</field>
+                                            <field name="PROP">SetRating</field>
+                                            <value name="VALUE">
+                                              <block type="lists_select_item" id="?lb]`2t2?yT@%w.=RAeK">
+                                                <value name="LIST">
+                                                  <block type="lexical_variable_get" id="*[xk_kfqb(2qBe|q#[f6">
+                                                    <mutation>
+                                                      <eventparam name="value"></eventparam>
+                                                    </mutation>
+                                                    <field name="VAR">value</field>
+                                                  </block>
+                                                </value>
+                                                <value name="NUM">
+                                                  <block type="math_number" id="eD}|7/4$!ygty1/zU=LJ">
+                                                    <field name="NUM">17</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="component_set_get" id=",+5T(/4$nlD1eevN^H[!">
+                                                <mutation component_type="Ratingbar" set_or_get="set" property_name="SetRating" is_generic="false" instance_name="rtng_alcohol"></mutation>
+                                                <field name="COMPONENT_SELECTOR">rtng_alcohol</field>
+                                                <field name="PROP">SetRating</field>
+                                                <value name="VALUE">
+                                                  <block type="lists_select_item" id="}lb~~-]uYSuPf3jH90d5">
+                                                    <value name="LIST">
+                                                      <block type="lexical_variable_get" id="|E5v:NrNGOc!RTTj^3!S">
+                                                        <mutation>
+                                                          <eventparam name="value"></eventparam>
+                                                        </mutation>
+                                                        <field name="VAR">value</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="NUM">
+                                                      <block type="math_number" id="qMMhn@mhrLov*rp?Vj4;">
+                                                        <field name="NUM">18</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="component_set_get" id="KIKjXs`[6ski-z,BgYei">
+                                                    <mutation component_type="Ratingbar" set_or_get="set" property_name="SetRating" is_generic="false" instance_name="rtng_drugs"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">rtng_drugs</field>
+                                                    <field name="PROP">SetRating</field>
+                                                    <value name="VALUE">
+                                                      <block type="lists_select_item" id="uM1(L|1:h#0!{wUgj:}}">
+                                                        <value name="LIST">
+                                                          <block type="lexical_variable_get" id="AW*aqwZUVYZ_k^AzWU#4">
+                                                            <mutation>
+                                                              <eventparam name="value"></eventparam>
+                                                            </mutation>
+                                                            <field name="VAR">value</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="NUM">
+                                                          <block type="math_number" id=".enC3i(Sm/R@v|97RL_9">
+                                                            <field name="NUM">19</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="component_set_get" id="b3/MO/~Mu.BvmrFhUE)i">
+                                                        <mutation component_type="Ratingbar" set_or_get="set" property_name="SetRating" is_generic="false" instance_name="rtng_cook"></mutation>
+                                                        <field name="COMPONENT_SELECTOR">rtng_cook</field>
+                                                        <field name="PROP">SetRating</field>
+                                                        <value name="VALUE">
+                                                          <block type="lists_select_item" id="0]JA|sTz(w,;%#fPaM,U">
+                                                            <value name="LIST">
+                                                              <block type="lexical_variable_get" id="g;cJq~at4cm3v!o[Y_#S">
+                                                                <mutation>
+                                                                  <eventparam name="value"></eventparam>
+                                                                </mutation>
+                                                                <field name="VAR">value</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="NUM">
+                                                              <block type="math_number" id="Pga/bZ++(Cd0FM*d0~YD">
+                                                                <field name="NUM">20</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="component_method" id="C[5$722@^T=ZmrG(8mSj">
+                                                            <mutation component_type="FirebaseStorage" method_name="Get" is_generic="false" instance_name="FirebaseStorage1"></mutation>
+                                                            <field name="COMPONENT_SELECTOR">FirebaseStorage1</field>
+                                                            <value name="ARG0">
+                                                              <block type="lexical_variable_get" id="n`Yb7@$3fZ_l#n:eD4]V">
+                                                                <field name="VAR">global SelectedUser</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ev}8={l^%CHYYNv8fP4K" x="-710" y="350">
+    <mutation component_type="FirebaseStorage" is_generic="false" instance_name="FirebaseStorage1" event_name="Response"></mutation>
+    <field name="COMPONENT_SELECTOR">FirebaseStorage1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="?_OC7)[xlAmt,J0a[/~9">
+        <mutation component_type="Image" set_or_get="set" property_name="Picture" is_generic="false" instance_name="Image1"></mutation>
+        <field name="COMPONENT_SELECTOR">Image1</field>
+        <field name="PROP">Picture</field>
+        <value name="VALUE">
+          <block type="lexical_variable_get" id="./O(QR6Q17?n5G^(XilN">
+            <mutation>
+              <eventparam name="downloadUrl"></eventparam>
+            </mutation>
+            <field name="VAR">downloadUrl</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="206" language-version="26"></yacodeblocks>
+</xml>

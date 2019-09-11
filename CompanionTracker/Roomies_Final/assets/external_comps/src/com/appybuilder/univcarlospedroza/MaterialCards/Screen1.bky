@@ -1,0 +1,393 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="wpQVo)C.(]QmKhLS9G4C" x="0" y="0">
+    <mutation component_type="Button" instance_name="btnType1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btnType1</field>
+    <statement name="DO">
+      <block type="component_method" id="%E,{}SsfS=!wL:7FA3j~">
+        <mutation component_type="CardView" method_name="Type1" is_generic="false" instance_name="CardView1"></mutation>
+        <field name="COMPONENT_SELECTOR">CardView1</field>
+        <value name="ARG0">
+          <block type="component_component_block" id="[0z`6TM6)C0iY3Lmd5Fn">
+            <mutation component_type="VerticalScrollArrangement" instance_name="VerticalScrollArrangement1"></mutation>
+            <field name="COMPONENT_SELECTOR">VerticalScrollArrangement1</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="lists_create_with" id="dP@$~#_Btn+Y]p(LbLOb">
+            <mutation items="4"></mutation>
+            <value name="ADD0">
+              <block type="text" id="MZ~}z@9AjVIr6yn7j1X7">
+                <field name="TEXT">http://www.lefrontal.com/es/images/tipo3/buho1.jpg</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="O6apVGBo3RoAsF9L.WBn">
+                <field name="TEXT">https://mundoespiritual.com/img/notas/115-GR-buho.jpg</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="+?ytCFE`h-rc6;Ibfqvq">
+                <field name="TEXT">https://mundoespiritual.com/img/notas/191-GR-buho.jpg</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="A[:3Fu7gU]qOQXThCW4K">
+                <field name="TEXT">http://www.buhopedia.com/wp-content/uploads/2012/10/lechuzas.jpg</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="lists_create_with" id="~=P,+Oz`6P*o-I7d2y|u">
+            <mutation items="4"></mutation>
+            <value name="ADD0">
+              <block type="text" id=".xF$6Xt$MxYjfGTl_sRo">
+                <field name="TEXT">Title 1</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="pGu[{BO8%{uBl=~eZN$|">
+                <field name="TEXT">Title 2</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="Vblsm.T1W:E0]P:O*wiM">
+                <field name="TEXT">Title 3</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="j-GjD4p7]qAd:|{(Fhbi">
+                <field name="TEXT">Title 4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG3">
+          <block type="lists_create_with" id="3^xLp0k6jT(641ojAja+">
+            <mutation items="4"></mutation>
+            <value name="ADD0">
+              <block type="text" id="P.lPmi9js]sF[69[!JOw">
+                <field name="TEXT">Subtitle 1</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="RA#M[RZoWYIK18$+ymCB">
+                <field name="TEXT">Subtitle 2</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="I$Z~nx3`3u/Mj%Mg9a/x">
+                <field name="TEXT">Subtitle 3</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="L]=d}49aDCCzt-Rn,958">
+                <field name="TEXT">Subtitle 4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG4">
+          <block type="lists_create_with" id="*w|v?_eTYDyuutd-L(Gl">
+            <mutation items="4"></mutation>
+            <value name="ADD0">
+              <block type="text" id="AC;8cAIf,`mM5erEw@K@">
+                <field name="TEXT">Content 1</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id=".Uqb2}[]-q@K#54r1y[7">
+                <field name="TEXT">Content 2</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="(}*O/psFNQjakMV0ipp9">
+                <field name="TEXT">Content 3</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="0g%dUj@,A$1^[A.$0}G?">
+                <field name="TEXT">Content 4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG5">
+          <block type="lists_create_with" id="Uj7$_vjd[Wc%PyME1W1g">
+            <mutation items="3"></mutation>
+            <value name="ADD0">
+              <block type="text" id="e*CvY^PH}v,(Km!J^/z|">
+                <field name="TEXT">favorite</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="U;tiq!=@s?f1gWccFo2-">
+                <field name="TEXT">bookmark</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="]hX%3(r^?~vaTF`jAYEM">
+                <field name="TEXT">share</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="O9#n:k^+,Em`!jq~n7um" x="0" y="611">
+    <mutation component_type="Button" instance_name="btnType2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btnType2</field>
+    <statement name="DO">
+      <block type="component_method" id="ie}(P4KQU!~htPnM@W_r">
+        <mutation component_type="CardView" method_name="Type2" is_generic="false" instance_name="CardView1"></mutation>
+        <field name="COMPONENT_SELECTOR">CardView1</field>
+        <value name="ARG0">
+          <block type="component_component_block" id="defA]SO@CQ`vJq[q:d]!">
+            <mutation component_type="VerticalScrollArrangement" instance_name="VerticalScrollArrangement1"></mutation>
+            <field name="COMPONENT_SELECTOR">VerticalScrollArrangement1</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="lists_create_with" id="=/k59oP^fIvGan6zP._S">
+            <mutation items="4"></mutation>
+            <value name="ADD0">
+              <block type="text" id="#pMN~v?0^Rf]D6t4~%AZ">
+                <field name="TEXT">http://www.lefrontal.com/es/images/tipo3/buho1.jpg</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="2+T%p.@up/(gHeHrrzGA">
+                <field name="TEXT">https://mundoespiritual.com/img/notas/115-GR-buho.jpg</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="G^XcrFT6/5CF{FH1X;AC">
+                <field name="TEXT">https://mundoespiritual.com/img/notas/191-GR-buho.jpg</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="8FUE=$=90LJhg=ZY+.u_">
+                <field name="TEXT">http://www.buhopedia.com/wp-content/uploads/2012/10/lechuzas.jpg</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="lists_create_with" id="!*~)H=sX4`)|}@vsC@]3">
+            <mutation items="4"></mutation>
+            <value name="ADD0">
+              <block type="text" id="`^?fe[-cXD0Tq+!1hC:U">
+                <field name="TEXT">Content 1</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="$;+2xFZ1-Nfx1sT/Y@M-">
+                <field name="TEXT">Content 2</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="Q/a?P7n1KTujaM9nf+T1">
+                <field name="TEXT">Content 3</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="K^mm.@-YrXcK/I29?U*^">
+                <field name="TEXT">Content 4</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG3">
+          <block type="lists_create_with" id=":(N3QTK#.@$IOm4QG7_7">
+            <mutation items="3"></mutation>
+            <value name="ADD0">
+              <block type="text" id="nib:i*)S6oSGiGiiM{a^">
+                <field name="TEXT">favorite</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id=";k}!aT.Sq@5_c6!Zj@:R">
+                <field name="TEXT">bookmark</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="#qI6[TOx.0IFmSxI]StW">
+                <field name="TEXT">share</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="o=)S%viC`H1p@@TuGF4+" x="0" y="1013">
+    <mutation component_type="Button" instance_name="btnType3" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btnType3</field>
+    <statement name="DO">
+      <block type="component_method" id="kxPX#hstd/!pV0h,RfE[">
+        <mutation component_type="CardView" method_name="Type3" is_generic="false" instance_name="CardView1"></mutation>
+        <field name="COMPONENT_SELECTOR">CardView1</field>
+        <value name="ARG0">
+          <block type="component_component_block" id="QM97}5:Oa)LUvwikbB~m">
+            <mutation component_type="VerticalScrollArrangement" instance_name="VerticalScrollArrangement1"></mutation>
+            <field name="COMPONENT_SELECTOR">VerticalScrollArrangement1</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="lists_create_with" id="e/3BB;m;}SQJ^4c9#}==">
+            <mutation items="4"></mutation>
+            <value name="ADD0">
+              <block type="text" id="Rqccn1(9_BZS7pz)Kx*5">
+                <field name="TEXT">http://www.lefrontal.com/es/images/tipo3/buho1.jpg</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="KIZ)({jz5mf;S0tt.a%S">
+                <field name="TEXT">https://mundoespiritual.com/img/notas/115-GR-buho.jpg</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id="~}_Jobhj2B]HQr7YZRCu">
+                <field name="TEXT">https://mundoespiritual.com/img/notas/191-GR-buho.jpg</field>
+              </block>
+            </value>
+            <value name="ADD3">
+              <block type="text" id="Uf[UU8G^^o`!zm2u?[91">
+                <field name="TEXT">http://www.buhopedia.com/wp-content/uploads/2012/10/lechuzas.jpg</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="lists_create_with" id="h#UuH(!|z,(x+S|A#6V.">
+            <mutation items="3"></mutation>
+            <value name="ADD0">
+              <block type="text" id="P$#^bIVA37DQ3,.-B^~@">
+                <field name="TEXT">favorite</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="8%r%gTkwM=myqfK{:,l/">
+                <field name="TEXT">bookmark</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text" id=";vY/r$O?bPsB9cD#fwG9">
+                <field name="TEXT">share</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="^d0{?5)xF+]UA2D):nZb" x="0" y="1311">
+    <mutation component_type="CardView" instance_name="CardView1" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">CardView1</field>
+    <statement name="DO">
+      <block type="component_method" id="-xKWlLlp/?+Jt=Ub/=/o">
+        <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="text_join" id="S3ts1`b.x*fISR%bb-#7">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="text" id="Ouc!(V.)RvZmm+ujK.pf">
+                <field name="TEXT">Card selected: </field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lexical_variable_get" id="hE^)X/[5M#yGyZH/A9;3">
+                <mutation>
+                  <eventparam name="position"></eventparam>
+                </mutation>
+                <field name="VAR">position</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="#(nfzjeL$FQ1/e}3q5U*" x="0" y="1479">
+    <mutation component_type="CardView" instance_name="CardView1" event_name="ButtonClick"></mutation>
+    <field name="COMPONENT_SELECTOR">CardView1</field>
+    <statement name="DO">
+      <block type="component_method" id="eBa!(%O!|^Ektwqhz/s8">
+        <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="text_join" id="gPupOz`d!F2q%Yb#rK_Z">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="text_join" id="COH+BD?HOuJpMKxH6v6)">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="HjS$XdyGL2RUvNPb+G#6">
+                    <field name="TEXT">Card selected: </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="lexical_variable_get" id="s[YQ$xWa^dQO0TLF}/jB">
+                    <mutation>
+                      <eventparam name="position"></eventparam>
+                    </mutation>
+                    <field name="VAR">position</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text_join" id="^j%ckg8mOTN~vfc~e5BE">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id=":(5aI:Z%G7Ea-zGub{Qt">
+                    <field name="TEXT">\n Button: </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="lexical_variable_get" id="UOQz}0uK4g%F_~(oKUG}">
+                    <mutation>
+                      <eventparam name="name"></eventparam>
+                    </mutation>
+                    <field name="VAR">name</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="/~L_av.D]jH+hgssR0ax" x="0" y="1699">
+    <mutation component_type="CardView" instance_name="CardView1" event_name="ErrorOccurred"></mutation>
+    <field name="COMPONENT_SELECTOR">CardView1</field>
+    <statement name="DO">
+      <block type="component_method" id="FD9{0KX@F2dcj(hoIwB@">
+        <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+        <value name="ARG0">
+          <block type="text_join" id="b6FvC*`(#|.$1Tx4z8Hu">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="text" id=".97XpgkO`rOpGcV/](X]">
+                <field name="TEXT">Error: </field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="lexical_variable_get" id="@|t^a*jIuUl.MO:8:tHx">
+                <mutation>
+                  <eventparam name="message"></eventparam>
+                </mutation>
+                <field name="VAR">message</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="159" language-version="20"></yacodeblocks>
+</xml>

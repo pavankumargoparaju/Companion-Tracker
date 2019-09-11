@@ -1,0 +1,103 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="g}Zv.VS/gHR!%^F$F@{U" x="-830" y="-710">
+    <mutation component_type="Form" is_generic="false" instance_name="Purpose" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Purpose</field>
+    <statement name="DO">
+      <block type="component_set_get" id="t_3[b`HCW{wUR##fN}G5">
+        <mutation component_type="KodularLottie" set_or_get="set" property_name="Source" is_generic="false" instance_name="Lottie1"></mutation>
+        <field name="COMPONENT_SELECTOR">Lottie1</field>
+        <field name="PROP">Source</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="x$oc0X:Pria8^%3C$X|0">
+            <mutation component_type="KodularLottie" set_or_get="get" property_name="Source" is_generic="false" instance_name="Lottie1"></mutation>
+            <field name="COMPONENT_SELECTOR">Lottie1</field>
+            <field name="PROP">Source</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="96ez}y$%-Bfy/lL3G6Z_">
+            <mutation component_type="KodularLottie" set_or_get="set" property_name="Source" is_generic="false" instance_name="Lottie2"></mutation>
+            <field name="COMPONENT_SELECTOR">Lottie2</field>
+            <field name="PROP">Source</field>
+            <value name="VALUE">
+              <block type="component_set_get" id=":nXf5}@WdefZ+FxwK33;">
+                <mutation component_type="KodularLottie" set_or_get="get" property_name="Source" is_generic="false" instance_name="Lottie2"></mutation>
+                <field name="COMPONENT_SELECTOR">Lottie2</field>
+                <field name="PROP">Source</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="l9(Govs^tr7dxQSI`;B:" x="-510" y="-630">
+    <field name="NAME">purpose</field>
+    <value name="VALUE">
+      <block type="text" id="av~09]^,6CtYB6yO,f6n">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="KVN`AWEuT_.JT7dy@xNl" x="-510" y="-570">
+    <mutation component_type="Button" is_generic="false" instance_name="far" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">far</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="$^RwWqdpFw6*{LShjB(S">
+        <field name="VAR">global purpose</field>
+        <value name="VALUE">
+          <block type="text" id="+olCi.!iuthR`HO+kZj%">
+            <field name="TEXT">Roomie</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreenWithStartValue" id="It5b!8ZC)Dr=!cXz5_@Y">
+            <value name="SCREENNAME">
+              <block type="text" id="ZTTmf@ZSWxsj7.Lw1_=Q">
+                <field name="TEXT">SignUp</field>
+              </block>
+            </value>
+            <value name="STARTVALUE">
+              <block type="lexical_variable_get" id="6bqAnp@@TI6%xoJZm*kj">
+                <field name="VAR">global purpose</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="[^]Bc6JTAps45RzLPvLC" x="-930" y="-530">
+    <mutation component_type="KodularLottie" is_generic="false" instance_name="Lottie2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Lottie2</field>
+  </block>
+  <block type="component_event" id="{xgN96-C3Q4)6%u`qG@4" x="-510" y="-410">
+    <mutation component_type="Button" is_generic="false" instance_name="par" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">par</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="/S}+Oz}$#;08u=XSStQ0">
+        <field name="VAR">global purpose</field>
+        <value name="VALUE">
+          <block type="text" id="Dd%Kh5/BGCs#mS3dBm]%">
+            <field name="TEXT">Post</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_openAnotherScreenWithStartValue" id="B;f3bT!?~mC3%Y%gEh:]">
+            <value name="SCREENNAME">
+              <block type="text" id="P-Swt3P8)0%~E|~BO$5O">
+                <field name="TEXT">SignUp</field>
+              </block>
+            </value>
+            <value name="STARTVALUE">
+              <block type="lexical_variable_get" id=",=P5YxN|J-CfyiC;93?b">
+                <field name="VAR">global purpose</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="206" language-version="26"></yacodeblocks>
+</xml>

@@ -1,0 +1,150 @@
+[{
+ "methods": [
+  {
+   "deprecated": "false",
+   "description": "Method for Type1",
+   "name": "Type1",
+   "params": [
+    {
+     "name": "input",
+     "type": "component"
+    },
+    {
+     "name": "images",
+     "type": "list"
+    },
+    {
+     "name": "titles",
+     "type": "list"
+    },
+    {
+     "name": "subTitles",
+     "type": "list"
+    },
+    {
+     "name": "content",
+     "type": "list"
+    },
+    {
+     "name": "buttons",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "description": "Method for Type2",
+   "name": "Type2",
+   "params": [
+    {
+     "name": "input",
+     "type": "component"
+    },
+    {
+     "name": "images",
+     "type": "list"
+    },
+    {
+     "name": "content",
+     "type": "list"
+    },
+    {
+     "name": "buttons",
+     "type": "list"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "description": "Method for Type3",
+   "name": "Type3",
+   "params": [
+    {
+     "name": "input",
+     "type": "component"
+    },
+    {
+     "name": "images",
+     "type": "list"
+    },
+    {
+     "name": "buttons",
+     "type": "list"
+    }
+   ]
+  }
+ ],
+ "nonVisible": "true",
+ "events": [
+  {
+   "deprecated": "false",
+   "description": "Event for AfterPicking",
+   "name": "AfterPicking",
+   "params": [{
+    "name": "position",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "description": "Event for ButtonClick",
+   "name": "ButtonClick",
+   "params": [
+    {
+     "name": "position",
+     "type": "number"
+    },
+    {
+     "name": "name",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "description": "Event for ErrorOccurred",
+   "name": "ErrorOccurred",
+   "params": [{
+    "name": "message",
+    "type": "text"
+   }]
+  }
+ ],
+ "external": "true",
+ "helpString": "Component for CardView",
+ "properties": [
+  {
+   "name": "FontIcon",
+   "defaultValue": "",
+   "editorType": "asset"
+  },
+  {
+   "name": "FontText",
+   "defaultValue": "",
+   "editorType": "asset"
+  }
+ ],
+ "type": "life.inventor.CardView.CardView",
+ "showOnPalette": "true",
+ "version": "1",
+ "name": "CardView",
+ "helpUrl": "",
+ "iconName": "https://drive.google.com/uc?export=download&id=0B6Gaxelf7K-3NThSUVE2SUVrYXM",
+ "blockProperties": [
+  {
+   "deprecated": "false",
+   "description": "",
+   "name": "FontIcon",
+   "type": "text",
+   "rw": "write-only"
+  },
+  {
+   "deprecated": "false",
+   "description": "",
+   "name": "FontText",
+   "type": "text",
+   "rw": "write-only"
+  }
+ ],
+ "categoryString": "EXTENSION"
+}]

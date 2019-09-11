@@ -1,0 +1,4 @@
+#|
+$JSON
+{"authURL":["creator.kodular.io","c.kodular.io"],"YaVersion":"206","Source":"Form","Properties":{"$Name":"Screen1","$Type":"Form","$Version":"40","AccentColor":"&HFF000000","AlignHorizontal":"3","AlignVertical":"2","AppId":"5610864958767104","AppName":" Companion Tracker","BackgroundColor":"&HFF444444","BackgroundImage":"ways-to-build-friendship.jpg","HighQuality":"True","Icon":"logo.jpg","OpenScreenAnimation":"zoom","PackageName":"com.example.Roomies","ScreenOrientation":"portrait","Scrollable":"True","SplashEnabled":"False","Theme":"AppTheme.Light.DarkActionBar","Title":"Login","Uuid":"0","$Components":[{"$Name":"Circular_Progress1","$Type":"MakeroidCircularProgress","$Version":"1","Uuid":"227975548"},{"$Name":"Clock1","$Type":"Clock","$Version":"4","TimerAlwaysFires":"False","Uuid":"-304860164"}]}}
+|#

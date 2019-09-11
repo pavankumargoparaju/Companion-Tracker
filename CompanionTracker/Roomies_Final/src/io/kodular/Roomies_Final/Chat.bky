@@ -1,0 +1,616 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="b@)GsVTj_DN48Na6B(p#" x="-1470" y="-1270">
+    <field name="NAME">Receiver</field>
+    <value name="VALUE">
+      <block type="text" id="qy@|U[IB0_Kf$mRH-Bxd">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="h(pkEGw%MvP3k,w@VD[7" x="-1470" y="-1210">
+    <field name="NAME">StartValue</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="WLV#nTd?+h}@7m)Q(/UM">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="EcMRDM!o?GC8`|zA|*BE" x="-1470" y="-1170">
+    <field name="NAME">Username</field>
+    <value name="VALUE">
+      <block type="text" id="9nWC||I;}S^2:TaPe]?V">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="[G?:vNQ4vwb#wo_7[bxI" x="-1470" y="-1110">
+    <field name="NAME">chat</field>
+    <value name="VALUE">
+      <block type="lists_create_with" id="Z[Npwdw%tRV~ai0A;I}T">
+        <mutation items="0"></mutation>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="H4:OFsjg4/L8l~b~CH3;" x="-1470" y="-1050">
+    <mutation component_type="Form" is_generic="false" instance_name="Chat" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Chat</field>
+    <statement name="DO">
+      <block type="component_set_get" id="!iF6Y@#ibz@NTVh.iwtH">
+        <mutation component_type="KodularLottie" set_or_get="set" property_name="Source" is_generic="false" instance_name="Lottie1"></mutation>
+        <field name="COMPONENT_SELECTOR">Lottie1</field>
+        <field name="PROP">Source</field>
+        <value name="VALUE">
+          <block type="component_set_get" id="(EY-zVQa.J:is+gcf4,b">
+            <mutation component_type="KodularLottie" set_or_get="get" property_name="Source" is_generic="false" instance_name="Lottie1"></mutation>
+            <field name="COMPONENT_SELECTOR">Lottie1</field>
+            <field name="PROP">Source</field>
+          </block>
+        </value>
+        <next>
+          <block type="lexical_variable_set" id="$)L[D]D:j87^{]Y^bxR!">
+            <field name="VAR">global StartValue</field>
+            <value name="VALUE">
+              <block type="controls_getStartValue" id="Cj_lDOxtKg$Sr)V_Poh="></block>
+            </value>
+            <next>
+              <block type="lexical_variable_set" id="r?qZGrmNYRLsM~QL9(:Y">
+                <field name="VAR">global Username</field>
+                <value name="VALUE">
+                  <block type="lists_select_item" id="jEB;}*BMY-G=3Cv1_LgY">
+                    <value name="LIST">
+                      <block type="lexical_variable_get" id="`PU*7suM1oBXK^,%ObY%">
+                        <field name="VAR">global StartValue</field>
+                      </block>
+                    </value>
+                    <value name="NUM">
+                      <block type="math_number" id="i^c2UKxae9c+50E$H#jL">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="{]OkFR2dpJG*No3OksV+">
+                    <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                    <field name="PROP">ProjectBucket</field>
+                    <value name="VALUE">
+                      <block type="text" id="Il00U2E)U(zqzi`GCKXd">
+                        <field name="TEXT">UserDetails</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="WcWVi8j:`ei,e([znTLx">
+                        <mutation component_type="FirebaseDB" method_name="GetValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+                        <value name="ARG0">
+                          <block type="lexical_variable_get" id="rl::+N95D!)SXsME1)6X">
+                            <field name="VAR">global Username</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="k9l_N$SB7)XJJa[2q5oG">
+                            <field name="TEXT"></field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="lexical_variable_set" id=".8OBwc@qbNuU!~S)*|pE">
+                            <field name="VAR">global Receiver</field>
+                            <value name="VALUE">
+                              <block type="lists_select_item" id="s)Dg?G(6HELkdQ]bEU-5">
+                                <value name="LIST">
+                                  <block type="lexical_variable_get" id="[4L!Sd6sZ,SpD?BS6*WS">
+                                    <field name="VAR">global StartValue</field>
+                                  </block>
+                                </value>
+                                <value name="NUM">
+                                  <block type="math_number" id="Jm/Y]thytGS:J[F{)3Zn">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="component_set_get" id="@u3Y+)59.BDer;U0W934">
+                                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="lbl_Name"></mutation>
+                                <field name="COMPONENT_SELECTOR">lbl_Name</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="lexical_variable_get" id="LC=_?kjSOW@{z%xp0oO`">
+                                    <field name="VAR">global Receiver</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="lexical_variable_set" id="pbU1lTVXe*Io3Mgohfj7">
+                                    <field name="VAR">global chat</field>
+                                    <value name="VALUE">
+                                      <block type="component_method" id="i3q~WLlgQ5Fgoa5jU?Yp">
+                                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                        <value name="ARG0">
+                                          <block type="lexical_variable_get" id="@K28O|jAv|G4luN^K5]C">
+                                            <field name="VAR">global Receiver</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block type="lists_create_with" id="9l|UN_J*Y9NsR7p74mzn">
+                                            <mutation items="0"></mutation>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="controls_forEach" id="NUu%s6XXgD(07#greaW9">
+                                        <field name="VAR">item</field>
+                                        <value name="LIST">
+                                          <block type="component_method" id="^Ja9HXsB{49tYv`Pp25s">
+                                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                            <value name="ARG0">
+                                              <block type="lexical_variable_get" id="N80TcF}`W%Y_KyM$`7eM">
+                                                <field name="VAR">global Receiver</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block type="lists_create_with" id="^HmJMdAdi9Fb#@YnvYnF">
+                                                <mutation items="0"></mutation>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="controls_if" id="NTj##N=WazkG0gtUYlg7">
+                                            <mutation else="1"></mutation>
+                                            <value name="IF0">
+                                              <block type="logic_compare" id="rBI[Evtxd78#C^[q#--Y">
+                                                <field name="OP">EQ</field>
+                                                <value name="A">
+                                                  <block type="text_contains" id="/YNXpP+^y:px5w8b?sH)">
+                                                    <value name="TEXT">
+                                                      <block type="lexical_variable_get" id="79F]PlQpw7-e!AbQ$:%j">
+                                                        <field name="VAR">item</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PIECE">
+                                                      <block type="text" id="nluqY^sL~xEup/:XiSn_">
+                                                        <field name="TEXT">You&gt;&gt;</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="logic_boolean" id="siLdS_;qv0OL/c!!SMJV">
+                                                    <field name="BOOL">TRUE</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="component_method" id="x:8;B+VfBSo!r{%N7=0x">
+                                                <mutation component_type="KodularChatView" method_name="AddMessage" is_generic="false" instance_name="Chat_View1"></mutation>
+                                                <field name="COMPONENT_SELECTOR">Chat_View1</field>
+                                                <value name="ARG0">
+                                                  <block type="text" id="L~nZHv0W4wldqoR/$6Q4">
+                                                    <field name="TEXT">baseline_face_black_18dp.png</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block type="text" id="`NhE_~SdR$?.#}mDv~|u">
+                                                    <field name="TEXT">You</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG2">
+                                                  <block type="text_replace_all" id="5kx5I{KdBRx0gd!O)x_Y">
+                                                    <value name="TEXT">
+                                                      <block type="lexical_variable_get" id="]=+^Pgk$N9YR[Tvu0)b]">
+                                                        <field name="VAR">item</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="SEGMENT">
+                                                      <block type="text" id="bZx-07$e:cfsq3GN/!W?">
+                                                        <field name="TEXT">You&gt;&gt;</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="REPLACEMENT">
+                                                      <block type="text" id="12kQmtI4+KcTJJ%1c,Sl">
+                                                        <field name="TEXT"></field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG3">
+                                                  <block type="text" id=";qegEZp-hJ_~/a2~X{ml">
+                                                    <field name="TEXT"></field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG4">
+                                                  <block type="math_number" id="Q`oGRWz1B0X3+Jih~qjK">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG5">
+                                                  <block type="logic_boolean" id="^$nuo7AD%p6|})zy,.pM">
+                                                    <field name="BOOL">TRUE</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <statement name="ELSE">
+                                              <block type="component_method" id="d6:GbJ-,vU2YtRBwE(R^">
+                                                <mutation component_type="KodularChatView" method_name="AddMessage" is_generic="false" instance_name="Chat_View1"></mutation>
+                                                <field name="COMPONENT_SELECTOR">Chat_View1</field>
+                                                <value name="ARG0">
+                                                  <block type="text" id="}-;jN^sj=pps?62e1ZYD">
+                                                    <field name="TEXT">gender-male2-512.png</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block type="lexical_variable_get" id="@C0BCL3|`s:IXcyOq`O,">
+                                                    <field name="VAR">global Receiver</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG2">
+                                                  <block type="lexical_variable_get" id="dJ:)+6jWrnp)M[dlA=Qv">
+                                                    <field name="VAR">item</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG3">
+                                                  <block type="text" id="C0HbRN_Lb#,d-byrIoz,">
+                                                    <field name="TEXT"></field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG4">
+                                                  <block type="math_number" id="T7G4IFZzddsZ/[*^3}9j">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG5">
+                                                  <block type="logic_boolean" id="iM_v9;C~BC;Bg~5;XzAl">
+                                                    <field name="BOOL">FALSE</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </statement>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="pGf@,LSqx|`x-(AFgH2p" x="-710" y="-1010">
+    <mutation component_type="FirebaseDB" is_generic="false" instance_name="Firebase_Database1" event_name="GotValue"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="))X+7NPU5]6~HQr0iR/|">
+        <field name="VAR">global Username</field>
+        <value name="VALUE">
+          <block type="lists_select_item" id="B53FS}6_su:kk{Id9[K9">
+            <value name="LIST">
+              <block type="lexical_variable_get" id="{P6eZDf9JQ_cEE7w(8{}">
+                <mutation>
+                  <eventparam name="value"></eventparam>
+                </mutation>
+                <field name="VAR">value</field>
+              </block>
+            </value>
+            <value name="NUM">
+              <block type="math_number" id="Vh={s*um4uxbRdP1?hP`">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="O*(9p4-DdMEeW%-S!]5?" x="-710" y="-850">
+    <mutation component_type="FirebaseDB" is_generic="false" instance_name="Firebase_Database1" event_name="DataChanged"></mutation>
+    <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Z!k(}/x*XH6(Nl1T^iHV">
+        <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+        <field name="PROP">ProjectBucket</field>
+        <value name="VALUE">
+          <block type="text" id="din2JVCRyD:xn+GI2rxo">
+            <field name="TEXT">Chats</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="!`fUUjjxL2-9}ZCjQxC2">
+            <value name="IF0">
+              <block type="logic_compare" id="ZAACSoGB~%EY1$yC99^I">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="lexical_variable_get" id="y)Od5K+}=sJqwHW+#bBS">
+                    <mutation>
+                      <eventparam name="tag"></eventparam>
+                    </mutation>
+                    <field name="VAR">tag</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text_join" id="j`r9%9OT9j,~WiBErq-h">
+                    <mutation items="3"></mutation>
+                    <value name="ADD0">
+                      <block type="lexical_variable_get" id="Z|o,=b~110oW?IS^oObE">
+                        <field name="VAR">global Receiver</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="text" id="6%Zj@7sr?rA::Z+{?MwE">
+                        <field name="TEXT">To</field>
+                      </block>
+                    </value>
+                    <value name="ADD2">
+                      <block type="lexical_variable_get" id="mic/e8Tl;KL#qu=!@Kmd">
+                        <field name="VAR">global Username</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="lists_add_items" id="2+J)TI`R$00;v$ZjLw8K">
+                <mutation items="1"></mutation>
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="60tX|5KNsVe}Zonz*^Qp">
+                    <field name="VAR">global chat</field>
+                  </block>
+                </value>
+                <value name="ITEM0">
+                  <block type="lexical_variable_get" id="@urizW+Wt+oW1s10vM=-">
+                    <mutation>
+                      <eventparam name="value"></eventparam>
+                    </mutation>
+                    <field name="VAR">value</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="GSa[L9zq_|xx0^oYNm}.">
+                    <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="lexical_variable_get" id="PV+=i${=%P94;4Z?x{)A">
+                        <field name="VAR">global Receiver</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="lexical_variable_get" id="R?]rL4#v#*FMA2ISG1Oa">
+                        <field name="VAR">global chat</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="xEh:@nnhX_u#~#f25I%l">
+                        <mutation component_type="MakeroidNotification" method_name="SimpleNotification" is_generic="false" instance_name="Notification1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Notification1</field>
+                        <value name="ARG0">
+                          <block type="lexical_variable_get" id="Le4z#Hw(.A|p7H-^tR|y">
+                            <field name="VAR">global Receiver</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="lexical_variable_get" id="HC)^Ea@k`dyaP[2Qg2tg">
+                            <mutation>
+                              <eventparam name="value"></eventparam>
+                            </mutation>
+                            <field name="VAR">value</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="peAy%3V6aom$]!yQ+o9a">
+                            <mutation component_type="KodularChatView" method_name="AddMessage" is_generic="false" instance_name="Chat_View1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Chat_View1</field>
+                            <value name="ARG0">
+                              <block type="text" id="hh1PNuH^?Z{{yKl;Yk.3">
+                                <field name="TEXT">gender-male2-512.png</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="lexical_variable_get" id="Q_*.7_F(*N-7hK=*cP?=">
+                                <field name="VAR">global Receiver</field>
+                              </block>
+                            </value>
+                            <value name="ARG2">
+                              <block type="lexical_variable_get" id="`QxzSV/x)eqcLZ9QId7~">
+                                <mutation>
+                                  <eventparam name="value"></eventparam>
+                                </mutation>
+                                <field name="VAR">value</field>
+                              </block>
+                            </value>
+                            <value name="ARG3">
+                              <block type="text" id="{$ikd`u/z[*=l0Ky2USE">
+                                <field name="TEXT"></field>
+                              </block>
+                            </value>
+                            <value name="ARG4">
+                              <block type="math_number" id="9U*K)iHST#S6G)Em{:y,">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="ARG5">
+                              <block type="logic_boolean" id="#WB/@QegZS9}[}}B66Pz">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="[2MlNmLfR*hjUIJB7:qk" x="-710" y="-230">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_Exit" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_Exit</field>
+    <statement name="DO">
+      <block type="controls_closeScreen" id="78F37rOO9,(G43]C@k_J"></block>
+    </statement>
+  </block>
+  <block type="component_event" id=".nvI%f?*f7pHh+(:9ZI3" x="-1470" y="-30">
+    <mutation component_type="Button" is_generic="false" instance_name="btn_send" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btn_send</field>
+    <statement name="DO">
+      <block type="component_set_get" id="AVsEFt}a~gDokB`;}UFq">
+        <mutation component_type="FirebaseDB" set_or_get="set" property_name="ProjectBucket" is_generic="false" instance_name="Firebase_Database1"></mutation>
+        <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+        <field name="PROP">ProjectBucket</field>
+        <value name="VALUE">
+          <block type="text" id="{v|Bl=;?,]d6*Xn{jHxa">
+            <field name="TEXT">Chats</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="uxanbFRkH$z4iQkv/w?A">
+            <mutation component_type="FirebaseDB" method_name="StoreValue" is_generic="false" instance_name="Firebase_Database1"></mutation>
+            <field name="COMPONENT_SELECTOR">Firebase_Database1</field>
+            <value name="ARG0">
+              <block type="text_join" id="zeEYm!|0mIcr|g?6hJ~`">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="lexical_variable_get" id="kj9-ngk-%[Frjpk{r-TC">
+                    <field name="VAR">global Username</field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="text" id="JFK{b|~6yZ=wX%$39x8j">
+                    <field name="TEXT">To</field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block type="lexical_variable_get" id="L`F=`-iitc[]}{p033+d">
+                    <field name="VAR">global Receiver</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="component_set_get" id="/aDW2(IQDt^tY7cdJcV*">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_SendMessage"></mutation>
+                <field name="COMPONENT_SELECTOR">txt_SendMessage</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <next>
+              <block type="lists_add_items" id="!2Uwapyu1~}Df1Qc7e?9">
+                <mutation items="1"></mutation>
+                <value name="LIST">
+                  <block type="lexical_variable_get" id="814b:-pe+w76`8gQecB4">
+                    <field name="VAR">global chat</field>
+                  </block>
+                </value>
+                <value name="ITEM0">
+                  <block type="text_join" id="WC*-E7R;Hc]:^*oZg-Rm">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="~UCU@D{d%(pNc+e6O.Td">
+                        <field name="TEXT">You&gt;&gt;</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="component_set_get" id="iD/Tdc]Vo~y+*[[9v%X^">
+                        <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_SendMessage"></mutation>
+                        <field name="COMPONENT_SELECTOR">txt_SendMessage</field>
+                        <field name="PROP">Text</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="ap;R*M??$;Y}]va;4@{-">
+                    <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="lexical_variable_get" id="*;Y^+mr!CaGdynf18cKg">
+                        <field name="VAR">global Receiver</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="lexical_variable_get" id="=ZOBAR=.Fw1CiK67,VP_">
+                        <field name="VAR">global chat</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="?rmWU7Y{OSQS96a=c7s:">
+                        <mutation component_type="KodularChatView" method_name="AddMessage" is_generic="false" instance_name="Chat_View1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Chat_View1</field>
+                        <value name="ARG0">
+                          <block type="text" id="VjYM,!sm9-/Qn)3[0Ek!">
+                            <field name="TEXT">baseline_face_black_18dp.png</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="(dqcClu5,fL$4{_aTn0O">
+                            <field name="TEXT">You</field>
+                          </block>
+                        </value>
+                        <value name="ARG2">
+                          <block type="component_set_get" id="%h0-c-S?04-8]W|diy7D">
+                            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txt_SendMessage"></mutation>
+                            <field name="COMPONENT_SELECTOR">txt_SendMessage</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                        <value name="ARG3">
+                          <block type="text" id="+;ybP=#0?D2|RVWl;C}O">
+                            <field name="TEXT"> </field>
+                          </block>
+                        </value>
+                        <value name="ARG4">
+                          <block type="math_number" id="I#HX}|wO(4;i]me3TdDJ">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="ARG5">
+                          <block type="logic_boolean" id="%0u/!z)haEhP42cs}HR#">
+                            <field name="BOOL">TRUE</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_set_get" id="kgr1!!DYi`v_NL@!e*jr">
+                            <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="txt_SendMessage"></mutation>
+                            <field name="COMPONENT_SELECTOR">txt_SendMessage</field>
+                            <field name="PROP">Text</field>
+                            <value name="VALUE">
+                              <block type="text" id="Fj^!SMg%S%A{AjI3:[0?">
+                                <field name="TEXT"></field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="206" language-version="26"></yacodeblocks>
+</xml>

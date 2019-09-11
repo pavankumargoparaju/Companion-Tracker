@@ -1,0 +1,114 @@
+[{
+ "methods": [
+  {
+   "deprecated": "false",
+   "description": "Method for Create",
+   "name": "Create",
+   "params": [{
+    "name": "input",
+    "type": "component"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "description": "Method for RecibeData",
+   "name": "RecibeData",
+   "params": [
+    {
+     "name": "imageComponent",
+     "type": "component"
+    },
+    {
+     "name": "imageData",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "description": "Method for SetMicState",
+   "name": "SetMicState",
+   "params": [{
+    "name": "state",
+    "type": "boolean"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "description": "Method for Start",
+   "name": "Start",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "description": "Method for StartMic",
+   "name": "StartMic",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "description": "Method for StartSpeaker",
+   "name": "StartSpeaker",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "description": "Method for Stop",
+   "name": "Stop",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "description": "Method for UpdateSpeaker",
+   "name": "UpdateSpeaker",
+   "params": [
+    {
+     "name": "dataAudio",
+     "type": "text"
+    },
+    {
+     "name": "salida",
+     "type": "number"
+    }
+   ]
+  }
+ ],
+ "nonVisible": "true",
+ "events": [
+  {
+   "deprecated": "false",
+   "description": "Event for Data",
+   "name": "Data",
+   "params": [{
+    "name": "data",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "description": "Event for DataSound",
+   "name": "DataSound",
+   "params": [
+    {
+     "name": "data",
+     "type": "text"
+    },
+    {
+     "name": "exit",
+     "type": "number"
+    }
+   ]
+  }
+ ],
+ "external": "true",
+ "helpString": "Component for CameraViewer",
+ "properties": [],
+ "type": "life.inventor.CameraViewer",
+ "showOnPalette": "true",
+ "version": "1",
+ "name": "CameraViewer",
+ "helpUrl": "",
+ "iconName": "https://drive.google.com/uc?export=download&id=0B6Gaxelf7K-3NThSUVE2SUVrYXM",
+ "blockProperties": [],
+ "categoryString": "EXTENSION"
+}]
